@@ -1,0 +1,24 @@
+{
+  "name": "Indores-app",
+  "description": "Sample app for Indores",
+  "version": "0.0.1",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "config": "^1.20.1",
+    "express": "3.x",
+    "jsonwebtoken": "^7.4.1",
+    "morgan": "^1.8.2",
+    "rand-token": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "start": "forever start -l forever.log -o out.log -e err.log -a server.js",
+    "stop": "forever stop server.js",
+    "test": "mocha --timeout 100000"
+  }
+}
