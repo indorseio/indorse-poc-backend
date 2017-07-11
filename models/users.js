@@ -7,6 +7,8 @@ var jwt    = require('jsonwebtoken');
 var server = new Server('localhost', 27017, {auto_reconnect: true});
 var passwordHash = require('password-hash');
 var randtoken = require('rand-token');
+var crypto = require('crypto');
+
 
 
 if(config.util.getEnv('NODE_ENV') !== 'test') {
@@ -28,6 +30,31 @@ else{
 });
 
 
+var genRandomString = function(length){
+    return crypto.randomBytes(Math.ceil(length/2))
+            .toString('hex') /** convert to hexadecimal format */
+            .slice(0,length);   /** return required number of characters */
+};
+
+var sha512 = function(password, salt){
+    var hash = crypto.createHmac('sha512', salt); /** Hashing algorithm sha512 */
+    hash.update(password);
+    var value = hash.digest('hex');
+    return {
+        salt:salt,
+        passwordHash:value
+    };
+};
+
+function saltHashPassword(userpassword) {
+    var salt = genRandomString(16); /** Gives us salt of length 16 */
+    var passwordData = sha512(userpassword, salt);
+    return passwordData;
+}
+
+
+
+
 exports.signup = function(req,res){
 
 	var info = req.body;
@@ -35,7 +62,9 @@ exports.signup = function(req,res){
 	{
 		var email = info['email'];
 		var password = info['password'];
-		var hashedPassword = passwordHash.generate(password);
+		var passwordData = saltHashPassword(password);
+		var salt =  passwordData.salt;
+		var hashedPassword = passwordData.passwordHash;
 		console.log('email is' + email + ' password is ' + password + ' hash is ' + hashedPassword); 
 		
 		db.collection('users',function(err,collection){
@@ -50,6 +79,7 @@ exports.signup = function(req,res){
 			else
 			{
 				info['pass'] =  hashedPassword;
+				info['salt'] = salt;
 				info['verify_token'] = randtoken.generate(16);
 				delete info['password'];
 				collection.insert(info, {safe:true}, function(err,result){
@@ -171,12 +201,15 @@ exports.login = function(req,res){
         {
                 email = info['email'];
                 password = info['password'];
-		var hashedPassword = passwordHash.generate(password);
-		console.log(hashedPassword)
 		db.collection('users',function(err,collection){
-                collection.findOne({'email': email,'pass' : hashedPassword}, function(err, item) {
+                collection.findOne({'email': email}, function(err, item) {
                 if(item)
                 {
+			salt = item['salt'];
+			storedpass = item['pass'];
+			var passwordData = sha512(password, salt);
+			if(passwordData.passwordHash == storedpass)
+			{			
 			var token = jwt.sign(item, req.app.get('indorseSecret'), {
                                         expiresIn : 60*60*24*31 // expires in 31 days
                                 });
@@ -188,11 +221,15 @@ exports.login = function(req,res){
                                         res.send(401,{ success : true, message : 'user logged in succesfully', token : token});
                                    }
                                 });
-
+			}
+			else
+			{
+				res.send(401,{ success : false, message : 'Email and password do not match' });
+			}
 		}
 		else
 		{
-			 res.send(401,{ success : false, message : 'Email and password dont match' });
+			 res.send(401,{ success : false, message : 'User with email not found' });
 		}
 		})
 		})
@@ -210,11 +247,9 @@ exports.profile = function(req,res){
                 email = info['email'];
                 token = info['token'];
                 db.collection('users',function(err,collection){
-                        collection.findOne({'email': email,'token' : token}, function(err, item) {
-                        if(item)
-                        {
-                        
-                                
+                collection.findOne({'email': email,'token' : token}, function(err, item) {
+                if(item)
+                {
                   jwt.verify(token, req.app.get('indorseSecret'), function(err, decoded) {
                   if (err) {    
                                 console.log('token error ' + err);
@@ -224,6 +259,7 @@ exports.profile = function(req,res){
                          
 			delete item['pass']
 			delete item['token']
+			delete item['salt']
 			 res.send(200,{ success : true, profile : item });
                 }
                 
@@ -243,7 +279,53 @@ exports.profile = function(req,res){
 }
 
 
+exports.getUsers = function(req,res){
+        var info = req.body;
+        if('email' in info && info['email'] != ''  && 'token' in info && info['token'] != '')
+        {
+                email = info['email'];
+                token = info['token'];
+                db.collection('users',function(err,collection){
+                collection.findOne({'email': email,'token' : token}, function(err, item) {
+                if(item)
+                {
+                  jwt.verify(token, req.app.get('indorseSecret'), function(err, decoded) {
+                  if (err) {
+                                console.log('token error ' + err);
+                                res.send(401,{ success : false, message : 'Auhentication failed'});
+                  } else {
+                        //Log the person out and return success
+		
+			collection.find({'email' : {'$exists' : true}}, function(err, result) {
+			
+			if(err)
+			{
+				res.send(401,{ success : false, message : 'Something went wrong' });
+			}
+			else
+			{
+				res.send(200,{ success : true, users : result });
+			}
 
+			})	
+			
+
+                }
+
+                });
+                        }
+                        else
+                        {
+                                res.send(401,{ success : false, message : 'Auhentication failed' });
+                        }
+                })
+                })
+        }
+        else
+        {
+                res.send(401,{ success : false, message : 'Email or token missing' });
+        }
+}
 
 exports.removeall = function(req,res){
 

@@ -26,14 +26,12 @@ app.post('/verify-email',user.verify)
 app.post('/login',user.login)
 app.post('/logout',user.logout)
 app.post('/me',user.profile)
-//app.post('/users',user.getUsers)
+app.post('/users',user.getUsers)
+app.post('/users/approve',user.approve)
+app.post('/users/disapprove',user.disapprove)
 /*app.post('/password/reset',user.passwordReset)
 app.post('password/forgot/',user.passwordForgot)
 app.post('password/change/',user.passwordChange)
-app.post('/me',user.profile)
-app.post('/users/approve',user.approve)
-app.post('/users/disapprove',user.disapprove)
-app.post('/users',user.getUsers)
 */
 
 app.post('/register',user.register);

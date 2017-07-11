@@ -2138,3 +2138,6 @@ email istelepras@gmail.com password is password123 hash is sha1$6462c057$1$7ce38
 [0mPOST /signup [33m401 [0m3.593 ms - 61[0m
 email istelepras@gmail.com password is password123 hash is sha1$f657f678$1$2f2b43f5f6a8bcbf50cad2ce00e1e9324bef6738
 [0mPOST /signup [33m401 [0m2.774 ms - 61[0m
+dev DB
+server running on port 3000
+Connected to database
