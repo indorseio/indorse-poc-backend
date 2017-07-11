@@ -1,0 +1,76 @@
+Wed, 05 Jul 2017 15:42:02 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:7:5
+Wed, 05 Jul 2017 15:42:02 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Wed, 05 Jul 2017 15:42:02 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+Wed, 05 Jul 2017 15:59:30 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:7:5
+Wed, 05 Jul 2017 15:59:30 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Wed, 05 Jul 2017 15:59:30 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+Wed, 05 Jul 2017 16:24:49 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:7:5
+Wed, 05 Jul 2017 16:24:49 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Wed, 05 Jul 2017 16:24:49 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+Wed, 05 Jul 2017 16:26:12 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:7:5
+Wed, 05 Jul 2017 16:26:12 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Wed, 05 Jul 2017 16:26:12 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+Fri, 07 Jul 2017 11:56:59 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:7:5
+Fri, 07 Jul 2017 11:56:59 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Fri, 07 Jul 2017 11:56:59 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+WARNING: No configurations found in configuration directory:/home/ubuntu/indores/prasanna-indorse-backend/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Sat, 08 Jul 2017 06:23:18 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Sat, 08 Jul 2017 06:23:18 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Sat, 08 Jul 2017 06:23:18 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+WARNING: No configurations found in configuration directory:/home/ubuntu/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 11 Jul 2017 10:58:44 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 11 Jul 2017 10:58:44 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 11 Jul 2017 10:58:44 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+WARNING: No configurations found in configuration directory:/home/ubuntu/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 11 Jul 2017 10:59:00 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 11 Jul 2017 10:59:00 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 11 Jul 2017 10:59:00 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+ReferenceError: time is not defined
+    at /home/ubuntu/models/users.js:39:31
+    at Db.collection (/home/ubuntu/node_modules/mongodb/lib/db.js:466:27)
+    at exports.signup (/home/ubuntu/models/users.js:38:6)
+    at callbacks (/home/ubuntu/node_modules/express/lib/router/index.js:164:37)
+    at param (/home/ubuntu/node_modules/express/lib/router/index.js:138:11)
+    at pass (/home/ubuntu/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/home/ubuntu/node_modules/express/lib/router/index.js:173:5)
+    at Object.router (/home/ubuntu/node_modules/express/lib/router/index.js:33:10)
+    at next (/home/ubuntu/node_modules/connect/lib/proto.js:174:15)
+    at Object.handle (/home/ubuntu/server.js:21:3)
+WARNING: No configurations found in configuration directory:/home/ubuntu/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 11 Jul 2017 11:01:13 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 11 Jul 2017 11:01:13 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 11 Jul 2017 11:01:13 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+ReferenceError: time is not defined
+    at /home/ubuntu/models/users.js:39:31
+    at Db.collection (/home/ubuntu/node_modules/mongodb/lib/db.js:466:27)
+    at exports.signup (/home/ubuntu/models/users.js:38:6)
+    at callbacks (/home/ubuntu/node_modules/express/lib/router/index.js:164:37)
+    at param (/home/ubuntu/node_modules/express/lib/router/index.js:138:11)
+    at pass (/home/ubuntu/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/home/ubuntu/node_modules/express/lib/router/index.js:173:5)
+    at Object.router (/home/ubuntu/node_modules/express/lib/router/index.js:33:10)
+    at next (/home/ubuntu/node_modules/connect/lib/proto.js:174:15)
+    at Object.handle (/home/ubuntu/server.js:21:3)
+WARNING: No configurations found in configuration directory:/home/ubuntu/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 11 Jul 2017 11:12:34 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 11 Jul 2017 11:12:34 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 11 Jul 2017 11:12:34 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+/home/ubuntu/models/users.js:53
+				info['verify_token'] randtoken.generate(16);
+				                     ^^^^^^^^^
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/ubuntu/server.js:3:12)

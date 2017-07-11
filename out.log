@@ -1,0 +1,2140 @@
+server running on port 3000
+Connected to database
+Token verified
+{ _id: '595cd1431d58180cd3746e82',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n',
+  terms: 'true',
+  timestamp: 1499255107,
+  iat: 1499269088,
+  exp: 1499355488 }
+[0mPOST /register [32m200 [0m35.903 ms - 103[0m
+Token verified
+{ _id: '595cd1431d58180cd3746e82',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n',
+  terms: 'true',
+  timestamp: 1499255107,
+  iat: 1499269088,
+  exp: 1499355488 }
+[0mPOST /register [32m200 [0m4.431 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m1.031 ms - 4[0m
+[0mPOST /register [32m200 [0m1.990 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.513 ms - 4[0m
+[0mPOST /register [32m200 [0m1.996 ms - 77[0m
+[0mPOST /register [32m200 [0m1.436 ms - 77[0m
+Token verified
+{ _id: '595cd1431d58180cd3746e82',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n',
+  terms: 'true',
+  timestamp: 1499255107,
+  iat: 1499269088,
+  exp: 1499355488 }
+[0mPOST /register [32m200 [0m1.890 ms - 77[0m
+server running on port 3000
+Connected to database
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg' }
+Token verified
+{ _id: '595cd1431d58180cd3746e82',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n',
+  terms: 'true',
+  timestamp: 1499255107,
+  iat: 1499269088,
+  exp: 1499355488 }
+[0mPOST /register [32m200 [0m38.074 ms - 77[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m4.238 ms - 77[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m7.049 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.861 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.767 ms - 77[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n' }
+[0mPOST /register [32m200 [0m5.608 ms - 367[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m7.376 ms - 50[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m2.570 ms - 344[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m2.413 ms - 344[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg' }
+Token verified
+{ _id: '595cd1431d58180cd3746e82',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP\n',
+  terms: 'true',
+  timestamp: 1499255107,
+  iat: 1499269088,
+  exp: 1499355488 }
+[0mPOST /register [32m200 [0m3.056 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.375 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.255 ms - 344[0m
+[0mOPTIONS /register [32m200 [0m0.250 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m5.761 ms - 344[0m
+[0mOPTIONS /register [32m200 [0m0.245 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.760 ms - 344[0m
+[0mOPTIONS /register [32m200 [0m0.700 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwiaWF0IjoxNDk5MjcxMjYyLCJleHAiOjE0OTkzNTc2NjJ9.MKvQFKjE7TT4A9Pw_-84ErSgJ_3XDtVsZEwJi0tStnE' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  iat: 1499271262,
+  exp: 1499357662 }
+[0mPOST /register [32m200 [0m3.858 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.268 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwiaWF0IjoxNDk5MjcxMjYyLCJleHAiOjE0OTkzNTc2NjJ9.MKvQFKjE7TT4A9Pw_-84ErSgJ_3XDtVsZEwJi0tStnE' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  iat: 1499271262,
+  exp: 1499357662 }
+[0mPOST /register [32m200 [0m2.602 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.244 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.804 ms - 364[0m
+{ email: 'kv.prshnt@gmail.com', string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m1.745 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m1.147 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.793 ms - 364[0m
+server running on port 3000
+Connected to database
+[0mOPTIONS /register [32m200 [0m4.607 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m31.663 ms - 61[0m
+server running on port 3000
+Connected to database
+[0mOPTIONS /register [32m200 [0m4.411 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m32.415 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.885 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m4.462 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.774 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.281 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.278 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.454 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.266 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.223 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.270 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.081 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m1.015 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.733 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.242 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.923 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.730 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.404 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.248 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.716 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.872 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.242 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.170 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.740 ms - 381[0m
+[0mOPTIONS /register [32m200 [0m0.250 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.649 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczNTQ2LCJleHAiOjE0OTkzNTk5NDZ9.3h8YwVVmw9zanfiqeenfD1n40NTrXWhm_-eGTHyPhJg' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273546,
+  exp: 1499359946 }
+[0mPOST /register [32m200 [0m4.393 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.261 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.520 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczNjUzLCJleHAiOjE0OTkzNjAwNTN9.aMGDqtB00AjlIe4wX5COozsVdxnlZIIWk2mc_qXCaVw' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273653,
+  exp: 1499360053 }
+[0mPOST /register [32m200 [0m2.293 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m2.210 ms - 4[0m
+{ email: 'prasanna@123.com',
+  string: 'KV7654R5FZU0CMYW4LTE',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczNjUzLCJleHAiOjE0OTkzNjAwNTN9.aMGDqtB00AjlIe4wX5COozsVdxnlZIIWk2mc_qXCaVw' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273653,
+  exp: 1499360053 }
+[0mPOST /register [32m200 [0m7.975 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.575 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.767 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.238 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m4.489 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczODcxLCJleHAiOjE0OTkzNjAyNzF9.Ke8wzMyW4YVgjMOcoSKr2St4X3KnH7QsW0KdmXWmtCk' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273871,
+  exp: 1499360271 }
+[0mPOST /register [32m200 [0m2.671 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.249 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczODcxLCJleHAiOjE0OTkzNjAyNzF9.Ke8wzMyW4YVgjMOcoSKr2St4X3KnH7QsW0KdmXWmtCk' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273871,
+  exp: 1499360271 }
+[0mPOST /register [32m200 [0m2.050 ms - 35[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MjczODcxLCJleHAiOjE0OTkzNjAyNzF9.Ke8wzMyW4YVgjMOcoSKr2St4X3KnH7QsW0KdmXWmtCk' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499273871,
+  exp: 1499360271 }
+[0mPOST /register [32m200 [0m2.923 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.910 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.989 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m0.237 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.412 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5Mjc0MjIwLCJleHAiOjE0OTkzNjA2MjB9.YHwUSuKbbhz0FMeu3pebWysuNBAAAJM0tzfweTpuZdc' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499274220,
+  exp: 1499360620 }
+[0mPOST /register [32m200 [0m3.050 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.243 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5Mjc0MjIwLCJleHAiOjE0OTkzNjA2MjB9.YHwUSuKbbhz0FMeu3pebWysuNBAAAJM0tzfweTpuZdc' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499274220,
+  exp: 1499360620 }
+[0mPOST /register [32m200 [0m2.158 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.231 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5Mjc0MjIwLCJleHAiOjE0OTkzNjA2MjB9.YHwUSuKbbhz0FMeu3pebWysuNBAAAJM0tzfweTpuZdc' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499274220,
+  exp: 1499360620 }
+[0mPOST /register [32m200 [0m1.856 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.236 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.623 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m0.254 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m7.515 ms - 364[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '' }
+[0mPOST /register [32m200 [0m1.919 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m0.634 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.559 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m0.227 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.617 ms - 364[0m
+[0mOPTIONS /register [32m200 [0m0.219 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiIiLCJ0b2tlbiI6IiIsInRpbWVzdGFtcCI6MTQ5OTI3Mzc3NiwiaWF0IjoxNDk5Mjc0NDkyLCJleHAiOjE0OTkzNjA4OTJ9.4FsSl7iSJpzOhZGW9FX1R7IyH8L9vlHBqCHqbD16Tug' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274492,
+  exp: 1499360892 }
+[0mPOST /register [32m200 [0m2.906 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.235 ms - 4[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.618 ms - 387[0m
+{ email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m2.112 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.239 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m2.842 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m1.013 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m2.245 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.223 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m2.625 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.236 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m1.917 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.226 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA' }
+Token verified
+{ _id: '595d1a30cbb75c12a5377235',
+  email: 'itsme@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499273776,
+  iat: 1499274547,
+  exp: 1499360947 }
+[0mPOST /register [32m200 [0m2.932 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.220 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.322 ms - 774[0m
+[0mOPTIONS /register [32m200 [0m0.225 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZhV1FpT2lJMU9UVmtNV0V6TUdOaVlqYzFZekV5WVRVek56Y3lNelVpTENKbGJXRnBiQ0k2SW1sMGMyMWxRRzFsTG1OdmJTSXNJbk4wY21sdVp5STZJa05XV2taYVVWSTFSbHBWTUVOTldWZFFSMUJRSWl3aWRHVnliWE1pT2lKMGNuVmxJaXdpZEc5clpXNGlPaUlpTENKMGFXMWxjM1JoYlhBaU9qRTBPVGt5TnpNM056WXNJbWxoZENJNk1UUTVPVEkzTkRVME55d2laWGh3SWpveE5EazVNell3T1RRM2ZRLk81MTJobHJfWHJ4UGozajNDZlFwMmJHa1BpSWlTRFNuTV9HS0c4VmVwd0EiLCJ0aW1lc3RhbXAiOjE0OTkyNzQ1NjMsImlhdCI6MTQ5OTI3NDY1MiwiZXhwIjoxNDk5MzYxMDUyfQ.uOEavL-QoTFfwJf3IB3AcuJBLXFbNGYfFLYZJTs_XLI' }
+Token verified
+{ _id: '595d1d43cbb75c12a5377236',
+  email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA',
+  timestamp: 1499274563,
+  iat: 1499274652,
+  exp: 1499361052 }
+[0mPOST /register [32m200 [0m2.847 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.217 ms - 4[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.770 ms - 796[0m
+{ email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA' }
+Token verified
+{ _id: '595d1d43cbb75c12a5377236',
+  email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA',
+  timestamp: 1499274563,
+  iat: 1499274741,
+  exp: 1499361141 }
+[0mPOST /register [32m200 [0m1.978 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.256 ms - 4[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA' }
+Token verified
+{ _id: '595d1d43cbb75c12a5377236',
+  email: 'i@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWEzMGNiYjc1YzEyYTUzNzcyMzUiLCJlbWFpbCI6Iml0c21lQG1lLmNvbSIsInN0cmluZyI6IkNWWkZaUVI1RlpVMENNWVdQR1BQIiwidGVybXMiOiJ0cnVlIiwidG9rZW4iOiIiLCJ0aW1lc3RhbXAiOjE0OTkyNzM3NzYsImlhdCI6MTQ5OTI3NDU0NywiZXhwIjoxNDk5MzYwOTQ3fQ.O512hlr_XrxPj3j3CfQp2bGkPiIiSDSnM_GKG8VepwA',
+  timestamp: 1499274563,
+  iat: 1499274741,
+  exp: 1499361141 }
+[0mPOST /register [32m200 [0m3.577 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.228 ms - 4[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.880 ms - 1319[0m
+[0mOPTIONS /register [32m200 [0m1.185 ms - 4[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZhV1FpT2lJMU9UVmtNV1EwTTJOaVlqYzFZekV5WVRVek56Y3lNellpTENKbGJXRnBiQ0k2SW1sQWJXVXVZMjl0SWl3aWMzUnlhVzVuSWpvaVExWmFSbHBSVWpWR1dsVXdRMDFaVjFCSFVGQWlMQ0owWlhKdGN5STZJblJ5ZFdVaUxDSjBiMnRsYmlJNkltVjVTbWhpUjJOcFQybEtTVlY2U1RGT2FVbHpTVzVTTldORFNUWkphM0JZVmtOS09TNWxlVXBtWVZkUmFVOXBTVEZQVkZaclRWZEZlazFIVG1sWmFtTXhXWHBGZVZsVVZYcE9lbU41VFhwVmFVeERTbXhpVjBad1lrTkpOa2x0YkRCak1qRnNVVWN4YkV4dFRuWmlVMGx6U1c1T01HTnRiSFZhZVVrMlNXdE9WMWRyV21GVlZra3hVbXh3VmsxRlRrNVhWbVJSVWpGQ1VVbHBkMmxrUjFaNVlsaE5hVTlwU2pCamJsWnNTV2wzYVdSSE9YSmFWelJwVDJsSmFVeERTakJoVnpGc1l6TlNhR0pZUVdsUGFrVXdUMVJyZVU1NlRUTk9lbGx6U1cxc2FHUkRTVFpOVkZFMVQxUkpNMDVFVlRCT2VYZHBXbGhvZDBscWIzaE9SR3MxVFhwWmQwOVVVVE5tVVM1UE5URXlhR3h5WDFoeWVGQnFNMm96UTJaUmNESmlSMnRRYVVscFUwUlRiazFmUjB0SE9GWmxjSGRCSWl3aWRHbHRaWE4wWVcxd0lqb3hORGs1TWpjME5UWXpMQ0pwWVhRaU9qRTBPVGt5TnpRM05ERXNJbVY0Y0NJNk1UUTVPVE0yTVRFME1YMC51cnFRdXZ2a1JlczhzUmZKbXZrNmU1aWMyMWhhUUkwWDBRaUdpMUtVamVBIiwidGltZXN0YW1wIjoxNDk5Mjc0NzUwLCJpYXQiOjE0OTkyNzQ4MzMsImV4cCI6MTQ5OTM2MTIzM30.DYLD2zPXL1B1fjNNXYNDQ4GnGUXsQJuGOUmfeEtqXCQ' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274833,
+  exp: 1499361233 }
+[0mPOST /register [32m200 [0m1.954 ms - 35[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZhV1FpT2lJMU9UVmtNV1EwTTJOaVlqYzFZekV5WVRVek56Y3lNellpTENKbGJXRnBiQ0k2SW1sQWJXVXVZMjl0SWl3aWMzUnlhVzVuSWpvaVExWmFSbHBSVWpWR1dsVXdRMDFaVjFCSFVGQWlMQ0owWlhKdGN5STZJblJ5ZFdVaUxDSjBiMnRsYmlJNkltVjVTbWhpUjJOcFQybEtTVlY2U1RGT2FVbHpTVzVTTldORFNUWkphM0JZVmtOS09TNWxlVXBtWVZkUmFVOXBTVEZQVkZaclRWZEZlazFIVG1sWmFtTXhXWHBGZVZsVVZYcE9lbU41VFhwVmFVeERTbXhpVjBad1lrTkpOa2x0YkRCak1qRnNVVWN4YkV4dFRuWmlVMGx6U1c1T01HTnRiSFZhZVVrMlNXdE9WMWRyV21GVlZra3hVbXh3VmsxRlRrNVhWbVJSVWpGQ1VVbHBkMmxrUjFaNVlsaE5hVTlwU2pCamJsWnNTV2wzYVdSSE9YSmFWelJwVDJsSmFVeERTakJoVnpGc1l6TlNhR0pZUVdsUGFrVXdUMVJyZVU1NlRUTk9lbGx6U1cxc2FHUkRTVFpOVkZFMVQxUkpNMDVFVlRCT2VYZHBXbGhvZDBscWIzaE9SR3MxVFhwWmQwOVVVVE5tVVM1UE5URXlhR3h5WDFoeWVGQnFNMm96UTJaUmNESmlSMnRRYVVscFUwUlRiazFmUjB0SE9GWmxjSGRCSWl3aWRHbHRaWE4wWVcxd0lqb3hORGs1TWpjME5UWXpMQ0pwWVhRaU9qRTBPVGt5TnpRM05ERXNJbVY0Y0NJNk1UUTVPVE0yTVRFME1YMC51cnFRdXZ2a1JlczhzUmZKbXZrNmU1aWMyMWhhUUkwWDBRaUdpMUtVamVBIiwidGltZXN0YW1wIjoxNDk5Mjc0NzUwLCJpYXQiOjE0OTkyNzQ4MzMsImV4cCI6MTQ5OTM2MTIzM30.DYLD2zPXL1B1fjNNXYNDQ4GnGUXsQJuGOUmfeEtqXCQ' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274833,
+  exp: 1499361233 }
+[0mPOST /register [32m200 [0m2.411 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.215 ms - 4[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.681 ms - 1341[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTA1LCJleHAiOjE0OTkzNjEzMDV9.m0iLzm_zGgnxaR_V1R6p8uly85cyJhd7zCmGO6kaolA' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274905,
+  exp: 1499361305 }
+[0mPOST /register [32m200 [0m5.729 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.213 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTA1LCJleHAiOjE0OTkzNjEzMDV9.m0iLzm_zGgnxaR_V1R6p8uly85cyJhd7zCmGO6kaolA' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274905,
+  exp: 1499361305 }
+[0mPOST /register [32m200 [0m2.381 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.217 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.846 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.219 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.418 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.211 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m5.007 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.221 ms - 4[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m4.704 ms - 1341[0m
+{ email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTQwLCJleHAiOjE0OTkzNjEzNDB9.cCZof1s0Rngx3SghH0tcvYndasSoN1DaqS3cRmrNZOo' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274940,
+  exp: 1499361340 }
+[0mPOST /register [32m200 [0m2.032 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.211 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTQwLCJleHAiOjE0OTkzNjEzNDB9.cCZof1s0Rngx3SghH0tcvYndasSoN1DaqS3cRmrNZOo' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274940,
+  exp: 1499361340 }
+[0mPOST /register [32m200 [0m2.568 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.210 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTQwLCJleHAiOjE0OTkzNjEzNDB9.cCZof1s0Rngx3SghH0tcvYndasSoN1DaqS3cRmrNZOo' }
+Token verified
+{ _id: '595d1dfecbb75c12a5377237',
+  email: 'z@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWQ0M2NiYjc1YzEyYTUzNzcyMzYiLCJlbWFpbCI6ImlAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdFek1HTmlZamMxWXpFeVlUVXpOemN5TXpVaUxDSmxiV0ZwYkNJNkltbDBjMjFsUUcxbExtTnZiU0lzSW5OMGNtbHVaeUk2SWtOV1drWmFVVkkxUmxwVk1FTk5XVmRRUjFCUUlpd2lkR1Z5YlhNaU9pSjBjblZsSWl3aWRHOXJaVzRpT2lJaUxDSjBhVzFsYzNSaGJYQWlPakUwT1RreU56TTNOellzSW1saGRDSTZNVFE1T1RJM05EVTBOeXdpWlhod0lqb3hORGs1TXpZd09UUTNmUS5PNTEyaGxyX1hyeFBqM2ozQ2ZRcDJiR2tQaUlpU0RTbk1fR0tHOFZlcHdBIiwidGltZXN0YW1wIjoxNDk5Mjc0NTYzLCJpYXQiOjE0OTkyNzQ3NDEsImV4cCI6MTQ5OTM2MTE0MX0.urqQuvvkRes8sRfJmvk6e5ic21haQI0X0QiGi1KUjeA',
+  timestamp: 1499274750,
+  iat: 1499274940,
+  exp: 1499361340 }
+[0mPOST /register [32m200 [0m1.918 ms - 35[0m
+[0mOPTIONS /register [32m200 [0m0.216 ms - 4[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.578 ms - 2046[0m
+{ email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWU5ZWNiYjc1YzEyYTUzNzcyMzgiLCJlbWFpbCI6ImFAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmZhV1FpT2lJMU9UVmtNV1JtWldOaVlqYzFZekV5WVRVek56Y3lNemNpTENKbGJXRnBiQ0k2SW5wQWJXVXVZMjl0SWl3aWMzUnlhVzVuSWpvaVExWmFSbHBSVWpWR1dsVXdRMDFaVjFCSFVGQWlMQ0owWlhKdGN5STZJblJ5ZFdVaUxDSjBiMnRsYmlJNkltVjVTbWhpUjJOcFQybEtTVlY2U1RGT2FVbHpTVzVTTldORFNUWkphM0JZVmtOS09TNWxlVXBtWVZkUmFVOXBTVEZQVkZaclRWZFJNRTB5VG1sWmFtTXhXWHBGZVZsVVZYcE9lbU41VFhwWmFVeERTbXhpVjBad1lrTkpOa2x0YkVGaVYxVjFXVEk1ZEVscGQybGpNMUo1WVZjMWJrbHFiMmxSTVZwaFVteHdVbFZxVmtkWGJGVjNVVEF4V2xZeFFraFZSa0ZwVEVOS01GcFlTblJqZVVrMlNXNVNlV1JYVldsTVEwb3dZakowYkdKcFNUWkpiVlkxVTIxb2FWSXlUbkJVTW14TFUxWldObE5VUms5aFZXeDZVMWMxVTA1WFRrUlRWRnBLWVROQ1dWWnJUa3RQVXpWc1pWVndiVmxXWkZKaFZUbHdVMVJHVUZaR1duSlVWbVJHWldzeFNGUnRiRnBoYlUxNFYxaHdSbVZXYkZWV1dIQlBaVzFPTlZSWWNGWmhWWGhFVTIxNGFWWXdXbmRaYTA1S1RtdHNkR0pFUW1wTmFrWnpWVlZqZUdKRmVIUlVibHBwVlRCc2VsTlhOVTlOUjA1MFlraFdZV1ZWYXpKVFYzUlBWakZrY2xkdFJsWldhMnQ0VlcxNGQxWnJNVVpVYXpWWVZtMVNVbFZxUmtOVlZXeHdaREpzYTFJeFdqVlpiR2hPWVZVNWNGTnFRbXBpYkZwelUxZHNNMkZYVWtoUFdFcGhWbnBTY0ZReWJFcGhWWGhFVTJwQ2FGWjZSbk5aZWs1VFlVZEtXVkZYYkZCaGExVjNWREZTY21WVk5UWlVWRTVQWld4c2VsTlhNWE5oUjFKRVUxUmFUbFpHUlRGVU1WSktUVEExUlZaVVFrOWxXR1J3VjJ4b2IyUXdiSEZpTTJoUFVrZHpNVlJZY0Zwa01EbFZWVlJPYlZWVE5WQk9WRVY1WVVkNGVWZ3hhSGxsUmtKeFRUSnZlbEV5V2xKalJFcHBVakowVVdGVmJIQlZNRkpVWW1zeFpsSXdkRWhQUmxwc1kwaGtRa2xwZDJsa1IyeDBXbGhPTUZsWE1YZEphbTk0VGtSck5VMXFZekJPVkZsNlRFTktjRmxZVVdsUGFrVXdUMVJyZVU1NlVUTk9SRVZ6U1cxV05HTkRTVFpOVkZFMVQxUk5NazFVUlRCTldEQXVkWEp4VVhWMmRtdFNaWE00YzFKbVNtMTJhelpsTldsak1qRm9ZVkZKTUZnd1VXbEhhVEZMVldwbFFTSXNJblJwYldWemRHRnRjQ0k2TVRRNU9USTNORGMxTUN3aWFXRjBJam94TkRrNU1qYzBPVEExTENKbGVIQWlPakUwT1Rrek5qRXpNRFY5Lm0waUx6bV96R2dueGFSX1YxUjZwOHVseTg1Y3lKaGQ3ekNtR082a2FvbEEiLCJ0aW1lc3RhbXAiOjE0OTkyNzQ5MTAsImlhdCI6MTQ5OTI3NTI5NywiZXhwIjoxNDk5MzYxNjk3fQ.J4INYfjVo1MBQOcqWpcwKd5mvygJNYcWgM0nDEu3eK0' }
+Token verified
+{ _id: '595d1e9ecbb75c12a5377238',
+  email: 'a@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMWRmZWNiYjc1YzEyYTUzNzcyMzciLCJlbWFpbCI6InpAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpmYVdRaU9pSTFPVFZrTVdRME0yTmlZamMxWXpFeVlUVXpOemN5TXpZaUxDSmxiV0ZwYkNJNkltbEFiV1V1WTI5dElpd2ljM1J5YVc1bklqb2lRMVphUmxwUlVqVkdXbFV3UTAxWlYxQkhVRkFpTENKMFpYSnRjeUk2SW5SeWRXVWlMQ0owYjJ0bGJpSTZJbVY1U21oaVIyTnBUMmxLU1ZWNlNURk9hVWx6U1c1U05XTkRTVFpKYTNCWVZrTktPUzVsZVVwbVlWZFJhVTlwU1RGUFZGWnJUVmRGZWsxSFRtbFphbU14V1hwRmVWbFVWWHBPZW1ONVRYcFZhVXhEU214aVYwWndZa05KTmtsdGJEQmpNakZzVVVjeGJFeHRUblppVTBselNXNU9NR050YkhWYWVVazJTV3RPVjFkcldtRlZWa2t4VW14d1ZrMUZUazVYVm1SUlVqRkNVVWxwZDJsa1IxWjVZbGhOYVU5cFNqQmpibFpzU1dsM2FXUkhPWEphVnpScFQybEphVXhEU2pCaFZ6RnNZek5TYUdKWVFXbFBha1V3VDFScmVVNTZUVE5PZWxselNXMXNhR1JEU1RaTlZGRTFUMVJKTTA1RVZUQk9lWGRwV2xob2QwbHFiM2hPUkdzMVRYcFpkMDlVVVRObVVTNVBOVEV5YUd4eVgxaHllRkJxTTJvelEyWlJjREppUjJ0UWFVbHBVMFJUYmsxZlIwdEhPRlpsY0hkQklpd2lkR2x0WlhOMFlXMXdJam94TkRrNU1qYzBOVFl6TENKcFlYUWlPakUwT1RreU56UTNOREVzSW1WNGNDSTZNVFE1T1RNMk1URTBNWDAudXJxUXV2dmtSZXM4c1JmSm12azZlNWljMjFoYVFJMFgwUWlHaTFLVWplQSIsInRpbWVzdGFtcCI6MTQ5OTI3NDc1MCwiaWF0IjoxNDk5Mjc0OTA1LCJleHAiOjE0OTkzNjEzMDV9.m0iLzm_zGgnxaR_V1R6p8uly85cyJhd7zCmGO6kaolA',
+  timestamp: 1499274910,
+  iat: 1499275297,
+  exp: 1499361697 }
+[0mPOST /register [32m200 [0m2.028 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.232 ms - 4[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.999 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.207 ms - 4[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.347 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.214 ms - 4[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.558 ms - 359[0m
+[0mOPTIONS /register [32m200 [0m0.216 ms - 4[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMjA0NWNiYjc1YzEyYTUzNzcyMzkiLCJlbWFpbCI6ImJAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiIiwidGltZXN0YW1wIjoxNDk5Mjc1MzMzLCJpYXQiOjE0OTkyNzUzNjQsImV4cCI6MTQ5OTM2MTc2NH0.BFJnsoz1gGkwFrHagHtTc6g8lC9SzFy1KIbDvHYom9s' }
+Token verified
+{ _id: '595d2045cbb75c12a5377239',
+  email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '',
+  timestamp: 1499275333,
+  iat: 1499275364,
+  exp: 1499361764 }
+[0mPOST /register [32m200 [0m3.981 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.226 ms - 4[0m
+{ email: 'm@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.456 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.219 ms - 4[0m
+{ email: 'n@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.753 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.214 ms - 4[0m
+{ email: 'n@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.409 ms - 45[0m
+[0mOPTIONS /register [32m200 [0m0.217 ms - 4[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.564 ms - 381[0m
+{ email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMjA0NWNiYjc1YzEyYTUzNzcyMzkiLCJlbWFpbCI6ImJAbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6InRydWUiLCJ0b2tlbiI6IiIsInRpbWVzdGFtcCI6MTQ5OTI3NTMzMywiaWF0IjoxNDk5Mjc1NDI1LCJleHAiOjE0OTkzNjE4MjV9.aUC6ywlxmVHWKSaAvddsQUWYuBBLln7OjmhlQGVWa6Y' }
+Token verified
+{ _id: '595d2045cbb75c12a5377239',
+  email: 'b@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: '',
+  timestamp: 1499275333,
+  iat: 1499275425,
+  exp: 1499361825 }
+[0mPOST /register [32m200 [0m2.961 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.209 ms - 4[0m
+{ email: 'm@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.119 ms - 359[0m
+{ email: 'm@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: 'true',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMjA4OGNiYjc1YzEyYTUzNzcyM2EiLCJlbWFpbCI6Im1AbWUuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJ0ZXJtcyI6IiIsInRva2VuIjoiIiwidGltZXN0YW1wIjoxNDk5Mjc1NDAwLCJpYXQiOjE0OTkyNzU0MzMsImV4cCI6MTQ5OTM2MTgzM30.tL0A93y22n3SAD1YvXaSaa9EMhsieNHZ3EMjb2tiA0I' }
+Token verified
+{ _id: '595d2088cbb75c12a537723a',
+  email: 'm@me.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '',
+  timestamp: 1499275400,
+  iat: 1499275433,
+  exp: 1499361833 }
+[0mPOST /register [32m200 [0m5.855 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.445 ms - 4[0m
+{ email: 'ghgjhgj@gm.vo',
+  string: 'gfjhgjhgj',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.803 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.289 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xdhaskdjahskdas',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m7.965 ms - 50[0m
+[0mOPTIONS /register [32m200 [0m0.275 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcd',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.744 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcd',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.323 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.269 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdcbcbcbcbc',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.405 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.258 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.925 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.288 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.085 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.712 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.350 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.218 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.352 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.312 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.281 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m9.797 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.370 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.882 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.323 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.442 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.307 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.300 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m3.712 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.133 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.316 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.320 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.673 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.305 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdefcxxxxcxcxcxxcxcx',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.332 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m1.665 ms - 4[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.536 ms - 381[0m
+{ email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  terms: true,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5MzUwMzUxLCJleHAiOjE0OTk0MzY3NTF9.ICXuqRxRKI4IBby7LW9CgQdPgCXq8hCBBreuR4HY-6g' }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499350351,
+  exp: 1499436751 }
+[0mPOST /register [32m200 [0m2.210 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m0.279 ms - 4[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.343 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m2.746 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.323 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.328 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.286 ms - 77[0m
+{ email: 'gaurang@attores.com',
+  string: '0xabcdef',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.337 ms - 77[0m
+[0mOPTIONS /register [32m200 [0m0.226 ms - 4[0m
+{ email: 'telepras@gmail.com',
+  string: 'gwteyshegthyuiops345',
+  terms: '',
+  token: '' }
+[0mPOST /register [32m200 [0m1.674 ms - 50[0m
+server running on port 3000
+Connected to database
+[0mPOST /register [33m401 [0m25.046 ms - 60[0m
+{ email: 'telepras@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341' }
+[0mPOST /register [32m200 [0m12.100 ms - 77[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341' }
+[0mPOST /register [32m200 [0m8.383 ms - 50[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341' }
+[0mPOST /register [32m200 [0m6.234 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341' }
+[0mPOST /register [32m200 [0m2.494 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg' }
+token error TokenExpiredError: jwt expired
+[0mPOST /register [32m200 [0m4.169 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg' }
+token error TokenExpiredError: jwt expired
+[0mPOST /register [32m200 [0m2.185 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg',
+  terms: 'true' }
+token error TokenExpiredError: jwt expired
+[0mPOST /register [32m200 [0m2.318 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg',
+  terms: 'true' }
+token error TokenExpiredError: jwt expired
+[0mPOST /register [32m200 [0m11.529 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVjZDE0MzFkNTgxODBjZDM3NDZlODIiLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUFxuIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5MjU1MTA3LCJpYXQiOjE0OTkyNjkwODgsImV4cCI6MTQ5OTM1NTQ4OH0.cL2AZ1U8tft9QCD83zx_U7M8B7BArlG7-CT7TqTEChg',
+  terms: 'true' }
+token error TokenExpiredError: jwt expired
+[0mPOST /register [32m200 [0m3.485 ms - 407[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64',
+  terms: 'true' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m4.135 ms - 103[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.740 ms - 103[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.269 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.477 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.994 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.981 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.397 ms - 103[0m
+[0mPOST /register [33m401 [0m0.674 ms - 60[0m
+[0mPOST /register [33m401 [0m1.972 ms - 60[0m
+[0mPOST /register [33m401 [0m2.540 ms - 60[0m
+[0mPOST /register [33m401 [0m0.436 ms - 60[0m
+[0mPOST /register [33m401 [0m0.444 ms - 60[0m
+[0mPOST /register [33m401 [0m1.711 ms - 60[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m4.469 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m3.979 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.847 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.787 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.236 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.814 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.864 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.110 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.252 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m6.115 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.120 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.132 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.138 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.462 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.829 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.175 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.352 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m3.533 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.866 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.890 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m2.127 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m1.563 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP' }
+[0mPOST /register [32m200 [0m1.829 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m5.265 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m1.837 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m5.387 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.552 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m4.024 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJpYXQiOjE0OTk0MzUzMzcsImV4cCI6MTQ5OTUyMTczN30.DsN0Sf2EnFTRkCktA897rTVhHUYkTeBwv756LK1FS64' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  iat: 1499435337,
+  exp: 1499521737 }
+[0mPOST /register [32m200 [0m2.784 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '' }
+[0mPOST /register [32m200 [0m1.635 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '' }
+[0mPOST /register [32m200 [0m1.803 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJ0ZXJtcyI6InRydWUiLCJpYXQiOjE0OTk0NTE5ODIsImV4cCI6MTQ5OTUzODM4Mn0.5i4wsslOJb21YO_dihXzKV__lSR6ZUiePYstukIYRbI' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  terms: 'true',
+  iat: 1499451982,
+  exp: 1499538382 }
+[0mPOST /register [32m200 [0m1.896 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJ0ZXJtcyI6InRydWUiLCJpYXQiOjE0OTk0NTE5ODIsImV4cCI6MTQ5OTUzODM4Mn0.5i4wsslOJb21YO_dihXzKV__lSR6ZUiePYstukIYRbI',
+  terms: '' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  terms: 'true',
+  iat: 1499451982,
+  exp: 1499538382 }
+[0mPOST /register [32m200 [0m2.283 ms - 103[0m
+[0mOPTIONS /register [32m200 [0m5.233 ms - 4[0m
+[0mPOST /register [33m401 [0m0.527 ms - 60[0m
+[0mOPTIONS /register [32m200 [0m0.295 ms - 4[0m
+[0mPOST /register [33m401 [0m0.502 ms - 60[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVmOGY4Njk1YmNjZDIwMmQ5OGJiYmEiLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwic3RyaW5nIjoiQ1ZaRlpRUjVGWlUwQ01ZV1BHUFAiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwidGltZXN0YW1wIjoxNDk5NDM0ODg2LCJ0ZXJtcyI6InRydWUiLCJpYXQiOjE0OTk0NTE5ODIsImV4cCI6MTQ5OTUzODM4Mn0.5i4wsslOJb21YO_dihXzKV__lSR6ZUiePYstukIYRbI',
+  terms: '' }
+Token verified
+{ _id: '595f8f8695bccd202d98bbba',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  timestamp: 1499434886,
+  terms: 'true',
+  iat: 1499451982,
+  exp: 1499538382 }
+[0mPOST /register [32m200 [0m1.858 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.840 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDUzMzQ4LCJleHAiOjE0OTk1Mzk3NDh9.13rvkGMVwsbGzOCryq9cOKaAu2iJ5AX2-UgwFeg7vVg',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499453348,
+  exp: 1499539748 }
+[0mPOST /register [32m200 [0m4.885 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.553 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDgxMTQ3LCJleHAiOjE0OTk1Njc1NDd9.kk-UoAvDTxxE-vAQ-QF0X9oGNIRWdUaWSIom5u-wL0s',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499481147,
+  exp: 1499567547 }
+[0mPOST /register [32m200 [0m2.288 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.302 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDgxMTk1LCJleHAiOjE0OTk1Njc1OTV9.xMNpwtHewnmeX6dZP1szpNVB-saGAChkgi-alvstDms',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499481195,
+  exp: 1499567595 }
+[0mPOST /register [32m200 [0m2.455 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'love6435',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.343 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP1',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.376 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.535 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP1',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.324 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m3.105 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDgxNTk3LCJleHAiOjE0OTk1Njc5OTd9.roLFxCH4OFFWNSuGkSqF8zGrezMdcUk-iJhgpmSiZ0U',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499481597,
+  exp: 1499567997 }
+[0mPOST /register [32m200 [0m1.773 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'love6435',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.350 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'love6435',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.253 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'love6435',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m3.093 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'love6435',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.944 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.012 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDgxNzM5LCJleHAiOjE0OTk1NjgxMzl9.YLkJdUKCgpVpuGe5RiqM-8TSdpjvuT3USlK7-2d--CI',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499481739,
+  exp: 1499568139 }
+[0mPOST /register [32m200 [0m1.756 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.516 ms - 50[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@example.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.722 ms - 50[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.794 ms - 434[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTYwNDc2Njk1YmNjZDIwMmQ5OGJiYmIiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwiZW1haWwiOiJkdW1teUBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRva2VuIjoiIiwidGVybXMiOiIiLCJ0aW1lc3RhbXAiOjE0OTk0ODE5NTgsImlhdCI6MTQ5OTQ4MjAyMCwiZXhwIjoxNDk5NTY4NDIwfQ.ujMPVqfIPj-TUzKy-UGtYiSpu8XvffWEhIJy_zIfFtA',
+  terms: 'true' }
+Token verified
+{ _id: '5960476695bccd202d98bbbb',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '',
+  timestamp: 1499481958,
+  iat: 1499482020,
+  exp: 1499568420 }
+[0mPOST /register [32m200 [0m2.096 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.535 ms - 456[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTYwNDc2Njk1YmNjZDIwMmQ5OGJiYmIiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwiZW1haWwiOiJkdW1teUBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRva2VuIjoiIiwidGVybXMiOiJ0cnVlIiwidGltZXN0YW1wIjoxNDk5NDgxOTU4LCJpYXQiOjE0OTk0ODIwMzcsImV4cCI6MTQ5OTU2ODQzN30.mK1a3bPLpikmP390CPCpde1H2zXHmweqo4gFcGSv4Kc',
+  terms: true }
+Token verified
+{ _id: '5960476695bccd202d98bbbb',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'dummy@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: 'true',
+  timestamp: 1499481958,
+  iat: 1499482037,
+  exp: 1499568437 }
+[0mPOST /register [32m200 [0m1.818 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP1',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.376 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.551 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP1',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.321 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP1',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.351 ms - 77[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.809 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.487 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.515 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.595 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.469 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.465 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.858 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.531 ms - 444[0m
+[0mPOST /register [33m401 [0m0.439 ms - 60[0m
+{ email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341' }
+[0mPOST /register [32m200 [0m1.532 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.570 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m4.453 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.553 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.898 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m4.373 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.805 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.045 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.111 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.565 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.990 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.890 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.482 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.538 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.529 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.466 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.509 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.518 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.511 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.539 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.516 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m3.223 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.937 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDkwOTM3LCJleHAiOjE0OTk1NzczMzd9.Gf9KPz2pD_7V5EWvCMvYzI04as4l-_Gxg7fqUeptDHU',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499490937,
+  exp: 1499577337 }
+[0mPOST /register [32m200 [0m1.726 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.541 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDkxMDcwLCJleHAiOjE0OTk1Nzc0NzB9.0GZrzX7QA2cwHFo4L2mLsT1MDghsn-vRV9jMHcfNzhk',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499491070,
+  exp: 1499577470 }
+[0mPOST /register [32m200 [0m2.189 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.528 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.539 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.450 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m1.494 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDk0NTUyLCJleHAiOjE0OTk1ODA5NTJ9.HMlhMBLkfJQhJFmdYWxq8NVwVt1xjuA-F6a5MiGfDwI',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499494552,
+  exp: 1499580952 }
+[0mPOST /register [32m200 [0m1.774 ms - 103[0m
+dev DB
+server running on port 3000
+Connected to database
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m34.516 ms - 381[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTVkMGRmODgwYTZkOTExYzRhYjdkNDciLCJlbWFpbCI6Imt2LnByc2hudEBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRpbWVzdGFtcCI6MTQ5OTI3MDY0OCwidGVybXMiOiJ0cnVlIiwiaWF0IjoxNDk5NDk1MDA4LCJleHAiOjE0OTk1ODE0MDh9.9AcJmbYvm4siGxl3sfAmllDR6mfDkSQqUTeLoFltWl4',
+  terms: true }
+Token verified
+{ _id: '595d0df880a6d911c4ab7d47',
+  email: 'kv.prshnt@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  timestamp: 1499270648,
+  terms: 'true',
+  iat: 1499495008,
+  exp: 1499581408 }
+[0mPOST /register [32m200 [0m6.304 ms - 103[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'example@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m4.411 ms - 444[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kawasaki@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m9.447 ms - 50[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kawasaki@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.012 ms - 45[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kawasaki@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '' }
+[0mPOST /register [32m200 [0m2.214 ms - 438[0m
+{ api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kawasaki@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTYwN2FhYTVmZDdkNjJhOTBmNDg4YTYiLCJhcGlfa2V5IjoiZTViYjA4Y2EtY2JjZS00MzM2LWEyMzktZWJhMTEwMDIwMzQxIiwiZW1haWwiOiJrYXdhc2FraUBnbWFpbC5jb20iLCJzdHJpbmciOiJDVlpGWlFSNUZaVTBDTVlXUEdQUCIsInRva2VuIjoiIiwidGVybXMiOiIiLCJ0aW1lc3RhbXAiOjE0OTk0OTUwODIsImlhdCI6MTQ5OTQ5NTE2NiwiZXhwIjoxNDk5NTgxNTY2fQ.5yi7Rxm4dRkAgyt9WlOnhloB_-e3bOC95Ve9XnoiPGk',
+  terms: 'true' }
+Token verified
+{ _id: '59607aaa5fd7d62a90f488a6',
+  api_key: 'e5bb08ca-cbce-4336-a239-eba110020341',
+  email: 'kawasaki@gmail.com',
+  string: 'CVZFZQR5FZU0CMYWPGPP',
+  token: '',
+  terms: '',
+  timestamp: 1499495082,
+  iat: 1499495166,
+  exp: 1499581566 }
+[0mPOST /register [32m200 [0m3.164 ms - 103[0m
+dev DB
+server running on port 3000
+Connected to database
+dev DB
+server running on port 3000
+Connected to database
+email istelepras@gmail.com password is password123 hash is sha1$fe3f4b80$1$4fc95f3305ca64839b8e927a9d14ded5b07b6e26
+[0mPOST /signup [31m500 [0m24.481 ms - 858[0m
+dev DB
+server running on port 3000
+Connected to database
+email istelepras@gmail.com password is password123 hash is sha1$e4921e85$1$39119f98506ffa8776b7580e309c143bb807ce5d
+[0mPOST /signup [31m500 [0m25.044 ms - 858[0m
+dev DB
+server running on port 3000
+Connected to database
+email istelepras@gmail.com password is password123 hash is sha1$4d7e51d2$1$62aea1e2b5acd5e8153c213da9f5c093102981cc
+[0mPOST /signup [32m200 [0m48.070 ms - 65[0m
+email istelepras@gmail.com password is password123 hash is sha1$6462c057$1$7ce389f7c26823001d059b4d9e70af6d621e8a93
+[0mPOST /signup [33m401 [0m3.593 ms - 61[0m
+email istelepras@gmail.com password is password123 hash is sha1$f657f678$1$2f2b43f5f6a8bcbf50cad2ce00e1e9324bef6738
+[0mPOST /signup [33m401 [0m2.774 ms - 61[0m
