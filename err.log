@@ -74,3 +74,8 @@ SyntaxError: Unexpected identifier
     at Module.require (module.js:497:17)
     at require (internal/module.js:20:19)
     at Object.<anonymous> (/home/ubuntu/server.js:3:12)
+WARNING: No configurations found in configuration directory:/home/ubuntu/indorse-backend-actual/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 11 Jul 2017 16:29:32 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 11 Jul 2017 16:29:32 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 11 Jul 2017 16:29:32 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
