@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
     user = require('./models/users');    
+    claim = require('./models/claims');
 var jwt    = require('jsonwebtoken'); 
 var config = require('config');
 app.set('indorseSecret','testindorseapp');
@@ -29,13 +30,14 @@ app.post('/me',user.profile)
 app.post('/users',user.getUsers)
 app.post('/users/approve',user.approve)
 app.post('/users/disapprove',user.disapprove)
-/*app.post('/password/reset',user.passwordReset)
-app.post('password/forgot/',user.passwordForgot)
-app.post('password/change/',user.passwordChange)
-*/
+app.post('/password/reset',user.passwordReset)
+app.post('/password/forgot',user.passwordForgot)
+app.post('/password/change',user.passwordChange)
+app.post('/claims',claim.claim)
+app.post('/getClaims',claim.getclaims)
 
 app.post('/register',user.register);
 app.get('/removeAll',user.removeall)
 app.listen(80);
-console.log('server running on port 3000');
+console.log('server running on port 80');
 module.exports = app;
