@@ -79,3 +79,68 @@ WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environme
 Tue, 11 Jul 2017 16:29:32 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
 Tue, 11 Jul 2017 16:29:32 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
 Tue, 11 Jul 2017 16:29:32 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+WARNING: No configurations found in configuration directory:/home/ubuntu/indorse-backend-actual/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Thu, 13 Jul 2017 18:43:09 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Thu, 13 Jul 2017 18:43:09 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Thu, 13 Jul 2017 18:43:09 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+Error: request entity too large
+    at readStream (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/read.js:68:3)
+    at jsonParser (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/types/json.js:121:5)
+    at Object.bodyParser [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/middleware/bodyParser.js:60:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.logger (/home/ubuntu/indorse-backend-actual/node_modules/connect/node_modules/morgan/index.js:144:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.expressInit [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+Error: request entity too large
+    at readStream (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/read.js:68:3)
+    at jsonParser (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/types/json.js:121:5)
+    at Object.bodyParser [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/middleware/bodyParser.js:60:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.logger (/home/ubuntu/indorse-backend-actual/node_modules/connect/node_modules/morgan/index.js:144:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.expressInit [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+Error: request entity too large
+    at readStream (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/read.js:68:3)
+    at jsonParser (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/types/json.js:121:5)
+    at Object.bodyParser [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/middleware/bodyParser.js:60:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.logger (/home/ubuntu/indorse-backend-actual/node_modules/connect/node_modules/morgan/index.js:144:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.expressInit [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+Error: request entity too large
+    at readStream (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/read.js:68:3)
+    at jsonParser (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/types/json.js:121:5)
+    at Object.bodyParser [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/middleware/bodyParser.js:60:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.logger (/home/ubuntu/indorse-backend-actual/node_modules/connect/node_modules/morgan/index.js:144:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.expressInit [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+Error: request entity too large
+    at readStream (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/indorse-backend-actual/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/read.js:68:3)
+    at jsonParser (/home/ubuntu/indorse-backend-actual/node_modules/body-parser/lib/types/json.js:121:5)
+    at Object.bodyParser [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/middleware/bodyParser.js:60:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.logger (/home/ubuntu/indorse-backend-actual/node_modules/connect/node_modules/morgan/index.js:144:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+    at Object.expressInit [as handle] (/home/ubuntu/indorse-backend-actual/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/ubuntu/indorse-backend-actual/node_modules/connect/lib/proto.js:174:15)
+WARNING: No configurations found in configuration directory:/home/ubuntu/indorse-backend-actual/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Tue, 18 Jul 2017 19:00:05 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
+Tue, 18 Jul 2017 19:00:05 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Tue, 18 Jul 2017 19:00:05 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
