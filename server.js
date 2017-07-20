@@ -35,6 +35,7 @@ app.post('/password/forgot',user.passwordForgot)
 app.post('/password/change',user.passwordChange)
 app.post('/claims',claim.claim)
 app.post('/getClaims',claim.getclaims)
+app.post('/updateClaim',claim.updateClaims)
 
 app.post('/register',user.register);
 app.get('/removeAll',user.removeall)
