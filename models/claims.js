@@ -50,7 +50,8 @@ exports.claim = function(req,res){
 
                         if('claim_id' in info && info['claim_id'] !=  '')
                         {
-                            db.collection('claims', function (err, collection1) {
+                            res.send(401, {success: false, message: 'Claim id should not be sent'});
+                            /*db.collection('claims', function (err, collection1) {
 
                                 collection1.findOne({'_id': new ObjectID(info['claim_id']}, function (err, currclaim) {
 
@@ -83,7 +84,7 @@ exports.claim = function(req,res){
                                     }
                                 })
 
-                            })
+                            })*/
                         }
                         else {
                             var claim = {};
@@ -128,8 +129,87 @@ exports.claim = function(req,res){
     }
 else
 {
-	res.send(401,{ success : false, message : 'Authentication is failed' });
+	res.send(401,{ success : false, message : 'Authentication failed' });
 }
+}
+
+exports.updateClaims = function(req,res){
+    //var login =
+    //console.log('login result is ' + login);
+    if(true)
+    {
+        var info = req.body;
+        if('title' in info && info['title'] != '' && 'desc' in info && info['desc'] != '' && 'proof' in info && info['proof'] != '')
+        {
+
+            db.collection('users', function (err, collection) {
+                collection.findOne({'email': info['email']}, function (err, item) {
+
+                    if (item) {
+
+
+                        if('claim_id' in info && info['claim_id'] !=  '')
+                        {
+                            db.collection('claims', function (err, collection1) {
+
+                                collection1.findOne({'_id': new ObjectID(info['claim_id']}, function (err, currclaim) {
+
+                                    if(currclaim)
+                                    {
+                                        var claim = {};
+                                        currclaim['title'] = info['title'];
+                                        currclaim['desc'] = info['desc']
+                                        currclaim['proof'] = info['proof'];
+                                        if('visible' in info && info['visible'] != '')
+                                        {
+                                            currclaim['visible'] = info['visible'];
+                                        }
+                                        collection1.update({'_id' : new ObjectID(info['claim_id']},currclaim,{safe:true}, function(err, result) {
+
+                                            if(err)
+                                            {
+                                                res.send(401, {success: false, message: 'Update claim failed'});
+                                            }
+                                            else
+                                            {
+                                                res.send(200, {success: true, message: 'Claim has been updated'});
+                                            }
+
+                                        })
+                                    }
+                                    else
+                                    {
+                                        res.send(401, {success: false, message: 'Claim not found'});
+                                    }
+                                })
+
+                            })
+                        }
+                        else {
+                            res.send(401, {success: false, message: 'Claim id is not found'});
+                        }
+
+
+
+                    }
+                    else {
+                        res.send(401, {success: false, message: 'User not found'});
+                    }
+
+                })
+            })
+
+
+        }
+        else
+        {
+            res.send(401,{ success : false, message : 'Claim info is missing' });
+        }
+    }
+    else
+    {
+        res.send(401,{ success : false, message : 'Authentication failed' });
+    }
 }
 
 exports.getclaims = function(req,res){
@@ -197,51 +277,3 @@ exports.getclaims = function(req,res){
     }
 }
 
-
-exports.passwordReset = function(req,res){
-
-        var info = req.body;
-        if('email' in info && info['email'] != '' && 'pass_token' in info && info['pass_token'] != '' && 'password' in info && info['password'] != '')
-        {
-                var email = info['email'];
-                var pass_token = info['pass_token'];
-                var password = info['password'];
-                var curr_time = Math.floor(Date.now() / 1000);
-                db.collection('users',function(err,collection){
-                collection.findOne({'email': info['email'],'pass_verify_token' : info['pass_token']}, function(err, item) {
-               if(item && 'pass_verify_timestamp' in item && (curr_time - item['pass_verify_timestamp']) <= 86400)
-               {
-                                delete item['pass_verify_timestamp'];
-                                delete item['pass_verify_token'];
-                                var passwordData = sha512(password, item['salt']);
-                                item['pass'] = passwordData.passwordHash;
-                                var token = jwt.sign(item, req.app.get('indorseSecret'), {
-                                        expiresIn : 60*60*24*31 // expires in 31 days
-                                });
-                                item['token'] = token;
-                                collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
-                                if(err){
-                                                console.log(err);
-                                                res.send({success :  false,message : 'Something went wrong'});
-                                }
-                                else
-                                {
-
-                                        res.send({success : true,message : 'Password updated succesfully'})
-
-                                }
-                                })
-
-                        }
-                        else
-                        {
-                                res.send(401,{ success : false, message : 'Token authorization failed for given user' });
-                        }
-                        })
-                })
-        }
-        else
-        {
-                res.send(401,{ success : false, message : 'Email missing' });
-        }
-}

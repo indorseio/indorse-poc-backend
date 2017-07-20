@@ -435,11 +435,31 @@ exports.profile = function(req,res){
                                 res.send(401,{ success : false, message : 'Auhentication failed'});
                   } else {
                         //Log the person out and return success
-                         
-			delete item['pass']
-			delete item['token']
-			delete item['salt']
-			 res.send(200,{ success : true, profile : item });
+
+                      if('user_id' in info && info['user_id'] != '')
+                      {
+                          collection.findOne({'_id': new ObjectId(info['user_id']),'token' : token}, function(err, item1) {
+
+                              if(item1)
+                              {
+                                  delete item1['pass']
+                                  delete item1['token']
+                                  delete item1['salt']
+                                  res.send(200, {success: true, profile: item1});
+                              }
+                              else
+                              {
+                                  res.send(401,{ success : false, message : 'user not found'});
+                              }
+
+                          })
+                      }
+                      else {
+                          delete item['pass']
+                          delete item['token']
+                          delete item['salt']
+                          res.send(200, {success: true, profile: item});
+                      }
                 }
                 
                 });     
