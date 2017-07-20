@@ -151,8 +151,8 @@ exports.updateClaims = function(req,res){
                         if('claim_id' in info && info['claim_id'] !=  '')
                         {
                             db.collection('claims', function (err, collection1) {
-
-                                collection1.findOne({'_id': new ObjectID(info['claim_id']}, function (err, currclaim) {
+                                console.log(err)
+                                collection1.findOne({'_id': new ObjectID(info['claim_id'])}, function (err, currclaim) {
 
                                     if(currclaim)
                                     {
@@ -164,7 +164,7 @@ exports.updateClaims = function(req,res){
                                         {
                                             currclaim['visible'] = info['visible'];
                                         }
-                                        collection1.update({'_id' : new ObjectID(info['claim_id']},currclaim,{safe:true}, function(err, result) {
+                                        collection1.update({'_id' : new ObjectID(info['claim_id'])},currclaim,{safe:true}, function(err, result) {
 
                                             if(err)
                                             {
