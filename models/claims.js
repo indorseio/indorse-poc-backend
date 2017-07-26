@@ -15,12 +15,10 @@ var parameters = { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 };     //Option
 var sendinObj = new sendinblue(parameters);
 
 if(config.util.getEnv('NODE_ENV') !== 'test') {
-console.log('dev DB');
 db = new Db('indores_registrations', server);
 }
 else
 {
-console.log('test DB');
 db = new Db('indores_test', server);
 }
 db.open(function(err, db) {
@@ -34,9 +32,8 @@ else{
 
 
 exports.claim = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
 	var info = req.body;
 	if('title' in info && info['title'] != '' && 'desc' in info && info['desc'] != '' && 'proof' in info && info['proof'] != '')
@@ -95,8 +92,6 @@ exports.claim = function(req,res){
                             claim['visible'] = true
                             claim['ownerid'] = item['_id'].toString();
                             db.collection('claims', function (err, collection1) {
-                                console.log(err);
-                                console.log(collection1)
                                 collection1.insert(claim, {safe: true}, function (err, result) {
                                     if (err) {
                                         res.send(401, {success: false, message: 'Something went wrong'});
@@ -127,16 +122,15 @@ exports.claim = function(req,res){
 		res.send(401,{ success : false, message : 'Mandatory fields info missing' });
 	}
     }
-else
-{
-	res.send(401,{ success : false, message : 'Authentication failed' });
-}
+    else
+    {
+	    res.send(401,{ success : false, message : 'Authentication failed' });
+    }
 }
 
 exports.updateClaims = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
         var info = req.body;
         if('title' in info && info['title'] != '' && 'desc' in info && info['desc'] != '' && 'proof' in info && info['proof'] != '')
@@ -151,7 +145,7 @@ exports.updateClaims = function(req,res){
                         if('claim_id' in info && info['claim_id'] !=  '')
                         {
                             db.collection('claims', function (err, collection1) {
-                                console.log(err)
+
                                 collection1.findOne({'_id': new ObjectID(info['claim_id'])}, function (err, currclaim) {
 
                                     if(currclaim)
@@ -213,9 +207,8 @@ exports.updateClaims = function(req,res){
 }
 
 exports.getclaims = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
         var info = req.body;
         if('user_id' in info && info['user_id'] != '')
