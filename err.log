@@ -144,19 +144,3 @@ WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environme
 Tue, 18 Jul 2017 19:00:05 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:13:5
 Tue, 18 Jul 2017 19:00:05 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
 Tue, 18 Jul 2017 19:00:05 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
-WARNING: No configurations found in configuration directory:/home/ubuntu/indorse-backend-actual/config
-WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
-/home/ubuntu/indorse-backend-actual/models/claims.js:155
-                                collection1.findOne({'_id': new ObjectID(info['claim_id']}, function (err, currclaim) {
-                                                                                        ^
-SyntaxError: missing ) after argument list
-    at createScript (vm.js:56:10)
-    at Object.runInThisContext (vm.js:97:10)
-    at Module._compile (module.js:542:28)
-    at Object.Module._extensions..js (module.js:579:10)
-    at Module.load (module.js:487:32)
-    at tryModuleLoad (module.js:446:12)
-    at Function.Module._load (module.js:438:3)
-    at Module.require (module.js:497:17)
-    at require (internal/module.js:20:19)
-    at Object.<anonymous> (/home/ubuntu/indorse-backend-actual/server.js:4:13)
