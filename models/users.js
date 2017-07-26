@@ -72,7 +72,7 @@ exports.signup = function(req,res){
 		        collection.findOne({'email': info['email']}, function(err, item) {
         		if(item)
         		{
-				res.send(401,{ success : false, message : 'User with email exists' });
+				res.send(404,{ success : false, message : 'User with email exists' });
 			}
 			else
 			{
@@ -92,7 +92,7 @@ exports.signup = function(req,res){
                                         sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
                                         if(response.code != 'success')
                                         {
-                                                res.send(401,{ success : false, message : 'Error sending verification email' });
+                                                res.send(501,{ success : false, message : 'Error sending verification email' });
                                         }
                                         else
                                         {
@@ -109,7 +109,7 @@ exports.signup = function(req,res){
 	}
 	else
 	{
-		res.send(401,{ success : false, message : 'Email or password missing' });
+		res.send(422,{ success : false, message : 'Email or password missing' });
 	}
 }
 
@@ -128,7 +128,7 @@ exports.passwordForgot = function(req,res){
 				item['pass_verify_token'] = pass_verify_token;
 				collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
                                 if(err){
-                                                res.send({success :  false,message : 'Forgot password action failed'});
+                                                res.send(501,{success :  false,message : 'Forgot password action failed'});
                                 }
                                 else
                                 {
@@ -141,7 +141,7 @@ exports.passwordForgot = function(req,res){
     					sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
 					if(response.code != 'success')
 					{
-						res.send(401,{ success : false, message : 'Error sending forgot password email' });
+						res.send(501,{ success : false, message : 'Error sending forgot password email' });
 					}
 					else
 					{
@@ -155,14 +155,14 @@ exports.passwordForgot = function(req,res){
                         }
                         else
                         {
-				res.send(401,{ success : false, message : 'User with email does not exists' });
+				res.send(404,{ success : false, message : 'User with email does not exists' });
                         }
                         })
                 })
         }
         else
         {
-                res.send(401,{ success : false, message : 'Email missing' });
+                res.send(422,{ success : false, message : 'Email missing' });
         }
 }
 
@@ -192,7 +192,7 @@ exports.passwordReset = function(req,res){
                         item['token'] = token;
 				        collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
                             if(err){
-                                res.send({success :  false,message : 'Something went wrong'});
+                                res.send(501,{success :  false,message : 'Something went wrong'});
                             }
                             else
                             {
@@ -212,7 +212,7 @@ exports.passwordReset = function(req,res){
         }
         else
         {       
-                res.send(401,{ success : false, message : 'Email missing' });
+                res.send(422,{ success : false, message : 'Email missing' });
         }
 }
 
@@ -237,7 +237,7 @@ exports.passwordChange = function(req,res){
                                         item['pass'] = passwordData.passwordHash;
                                         collection.update({'email': email}, item, {safe: true}, function (err, result) {
                                             if (err) {
-                                                res.send(500, {success: false, message: 'Something went wrong'});
+                                                res.send(501, {success: false, message: 'Something went wrong'});
                                             }
                                             else {
                                                 res.send(200, {success: true, message: 'Password changed succesfully'});
@@ -261,7 +261,7 @@ exports.passwordChange = function(req,res){
         }
         else
         {
-                res.send(401,{ success : false, message : 'Email or token missing' });
+                res.send(422,{ success : false, message : 'Email or token missing' });
         }
 }
 
@@ -288,7 +288,7 @@ exports.verify = function(req,res){
                                 item['token'] = token;
 				collection.update({'email' : info['email']},item,{safe:true}, function(err, result) {
 				if (err) {
-                                	    res.send(401,{ success : false, message : 'Error verifying the user' });
+                                	    res.send(501,{ success : false, message : 'Error verifying the user' });
 				} else {
 					res.send(200,{ success : true, message : 'user verified succesfully', token : token});	
                                    }
@@ -304,7 +304,7 @@ exports.verify = function(req,res){
 	}
 	else
 	{
-		res.send(401,{ success : false, message : 'Email or token missing' });
+		res.send(422,{ success : false, message : 'Email or token missing' });
 	}
 
 }
@@ -323,7 +323,7 @@ exports.logout = function(req,res){
                     delete item['token']
                     collection.update({'email': email}, item, {safe: true}, function (err, result) {
                         if (err) {
-                            res.send(500, {success: false, message: 'Something went wrong'});
+                            res.send(501, {success: false, message: 'Something went wrong'});
                         }
                         else {
                             res.send(200, {success: true, message: 'Logged out succesfully'});
@@ -332,7 +332,7 @@ exports.logout = function(req,res){
                 }
                 else
                 {
-                    res.send(500, {success: false, message: 'Something went wrong'});
+                    res.send(501, {success: false, message: 'Something went wrong'});
                 }
 		});
 			})
@@ -370,7 +370,7 @@ exports.login = function(req,res){
                                 item['token'] = token;
                                 collection.update({'email' : email},item,{safe:true}, function(err, result) {
                                 if (err) { 
-                                            res.send(401,{ success : false, message : 'Error logging in the user' });
+                                            res.send(501,{ success : false, message : 'Error logging in the user' });
                                 } else {
                                         res.send(200,{ success : true, message : 'user logged in succesfully', token : token});
                                    }
@@ -383,14 +383,14 @@ exports.login = function(req,res){
 		}
 		else
 		{
-			 res.send(401,{ success : false, message : 'User with email not found' });
+			 res.send(404,{ success : false, message : 'User with email not found' });
 		}
 		})
 		})
 	}
 	else
 	{
-		res.send(401,{ success : false, message : 'Email or password missing' });
+		res.send(422,{ success : false, message : 'Email or password missing' });
 	}
 }
 
@@ -417,7 +417,7 @@ exports.profile = function(req,res){
                               }
                               else
                               {
-                                  res.send(401,{ success : false, message : 'user not found'});
+                                  res.send(404,{ success : false, message : 'user not found'});
                               }
 
                           })
@@ -468,7 +468,7 @@ exports.getUsers = function(req,res){
                 }
                 else
                 {
-                    res.send(401,{ success : false, message : 'Auhentication failed' });
+                    res.send(403,{ success : false, message : 'Auhentication failed' });
                 }
                 })
                 })
@@ -499,7 +499,7 @@ exports.approve = function(req,res){
                                                 collection.update({'_id' : ObjectID(approve_user_id)},item,{safe:true}, function(err, result) {
                                                 if(err)
                                                 {
-                                                        res.send(500,{ success : false, message : 'Something went wrong'});
+                                                        res.send(501,{ success : false, message : 'Something went wrong'});
                                                 }
                                                 else
                                                 {
@@ -509,19 +509,19 @@ exports.approve = function(req,res){
                                     }
                                     else
                                     {
-                                        res.send(401,{ success : false, message : 'User has not verified their email address'});
+                                        res.send(422,{ success : false, message : 'User has not verified their email address'});
                                     }
                                 }
                                 else
                                 {
-                                    res.send(500,{ success : false, message : 'Unable to find user'});
+                                    res.send(404,{ success : false, message : 'Unable to find user'});
                                 }
                             })
 
                         }
                         else
                         {
-                                res.send(401,{ success : false, message : 'Auhentication failed' });
+                                res.send(403,{ success : false, message : 'Auhentication failed' });
                         }
                 })
                 })
@@ -554,7 +554,7 @@ exports.disapprove = function(req,res){
                                                         collection.update({'_id' : ObjectID(approve_user_id)},item,{safe:true}, function(err, result) {
                                                         if(err)
                                                         {
-                                                                res.send(500,{ success : false, message : 'Something went wrong'});
+                                                                res.send(501,{ success : false, message : 'Something went wrong'});
                                                         }
                                                         else
                                                         {
@@ -564,19 +564,19 @@ exports.disapprove = function(req,res){
                                                         }
                                             else
                                             {
-                                                res.send(401,{ success : false, message : 'User has not verified their email address'});
+                                                res.send(422,{ success : false, message : 'User has not verified their email address'});
                                             }
                                          }
                                         else
                                         {
-                                                res.send(500,{ success : false, message : 'Unable to find user'});
+                                                res.send(404,{ success : false, message : 'Unable to find user'});
                                         }
                                 })
 
                         }
                         else
                         {
-                                res.send(401,{ success : false, message : 'Auhentication failed' });
+                                res.send(403,{ success : false, message : 'Auhentication failed' });
                         }       
                 })      
                 })      
