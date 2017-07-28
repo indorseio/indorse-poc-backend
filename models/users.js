@@ -53,12 +53,10 @@ function saltHashPassword(userpassword) {
 }
 
 
-
-
 exports.signup = function(req,res){
 
 	var info = req.body;
-	if('email' in info && info['email'] != ''  && 'password' in info && info['password'] != '' && 'name' in info && info['name'] != '')	
+	if('password' in info && info['password'] != '' && 'name' in info && info['name'] != '')
 	{
 		var email = info['email'];
 		var name = info['name'];
@@ -185,11 +183,15 @@ exports.passwordReset = function(req,res){
                         var user_item = Object.assign({},item);
                         delete user_item['pass'];
                         delete user_item['salt'];
-                        delete user_item['token'];
+                        delete user_item['tokens'];
                         var token = jwt.sign(user_item, req.app.get('indorseSecret'), {
                             expiresIn : 60*60*24*31 // expires in 31 days
                         });
-                        item['token'] = token;
+                        if(!('tokens' in item))
+                        {
+                            item['tokens'] = [];
+                        }
+                        item['tokens'].push(token);
 				        collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
                             if(err){
                                 res.send(501,{success :  false,message : 'Something went wrong'});
@@ -220,13 +222,12 @@ exports.passwordChange = function(req,res){
 
         var info = req.body;
         if('login' in req.body && req.body.login) {
-            if ('email' in info && info['email'] != '' && 'token' in info && info['token'] != '' && 'old_password' in info && info['old_password'] != '' && 'new_password' in info && info['new_password'] != '') {
+            if('email' in info && info['email'] != '' && 'old_password' in info && info['old_password'] != '' && 'new_password' in info && info['new_password'] != '') {
                 email = info['email'];
                 old_password = info['old_password'];
                 new_password = info['new_password'];
-                token = info['token']
                 db.collection('users', function (err, collection) {
-                    collection.findOne({'email': email, 'token': token}, function (err, item) {
+                    collection.findOne({'email': email}, function (err, item) {
                         if (item) {
                             //Check if the old password is correct. And then create a new hash for new password and replace new password with salt
                                     salt = item['salt'];
@@ -281,11 +282,15 @@ exports.verify = function(req,res){
 				var user_item = Object.assign({},item);
 				delete user_item['pass'];
 				delete user_item['salt'];
-				delete user_item['token'];
+				delete user_item['tokens'];
 				var token = jwt.sign(user_item, req.app.get('indorseSecret'), {
                                         expiresIn : 60*60*24*31 // expires in 31 days
                                 });
-                                item['token'] = token;
+				if(!('tokens' in item))
+                {
+                    item['tokens'] = [];
+                }
+                item['tokens'].push(token);
 				collection.update({'email' : info['email']},item,{safe:true}, function(err, result) {
 				if (err) {
                                 	    res.send(501,{ success : false, message : 'Error verifying the user' });
@@ -315,13 +320,14 @@ exports.logout = function(req,res){
     var info = req.body;
     if('login' in info && info.login)
     {
+        token = info['token'];
         db.collection('users',function(err,collection){
-            collection.findOne({'email': email,'token' : token}, function(err, item) {
+            collection.findOne({'email': email}, function(err, item) {
                 if(item) {
 
                     //Log the person out and return success
-                    delete item['token']
-                    collection.update({'email': email}, item, {safe: true}, function (err, result) {
+
+                    collection.update({'email': email}, { "$pull": { "tokens": token } }, {safe: true}, function (err, result) {
                         if (err) {
                             res.send(501, {success: false, message: 'Something went wrong'});
                         }
@@ -352,7 +358,7 @@ exports.login = function(req,res){
         email = info['email'];
         password = info['password'];
 		db.collection('users',function(err,collection){
-            collection.findOne({'email': email}, function(err, item) {
+		    collection.findOne({'email': email}, function(err, item) {
                 if(item)
                 {
 			salt = item['salt'];
@@ -363,18 +369,22 @@ exports.login = function(req,res){
                 var user_item = Object.assign({},item);
                 delete user_item['pass'];
                 delete user_item['salt'];
-                delete user_item['token'];
-			var token = jwt.sign(user_item, req.app.get('indorseSecret'), {
+                delete user_item['tokens'];
+			    var token = jwt.sign(user_item, req.app.get('indorseSecret'), {
                                         expiresIn : 60*60*24*31 // expires in 31 days
-                                });
-                                item['token'] = token;
-                                collection.update({'email' : email},item,{safe:true}, function(err, result) {
-                                if (err) { 
-                                            res.send(501,{ success : false, message : 'Error logging in the user' });
-                                } else {
-                                        res.send(200,{ success : true, message : 'user logged in succesfully', token : token});
-                                   }
-                                });
+                });
+                if(!('tokens' in item))
+                {
+                    item['tokens'] = [];
+                }
+                item['tokens'].push(token);
+                collection.update({'email' : email},item,{safe:true}, function(err, result) {
+                    if (err) {
+                        res.send(501,{ success : false, message : 'Error logging in the user' });
+                    } else {
+                        res.send(200,{ success : true, message : 'user logged in succesfully', token : token});
+                    }
+                });
 			}
 			else
 			{
@@ -399,7 +409,6 @@ exports.profile = function(req,res){
         if('login' in req.body && req.body.login)
         {       
                 email = info['email'];
-                token = info['token'];
                 db.collection('users',function(err,collection){
                 collection.findOne({'email': email,'token' : token}, function(err, item) {
                 if(item)
@@ -411,7 +420,7 @@ exports.profile = function(req,res){
                               if(item1)
                               {
                                   delete item1['pass']
-                                  delete item1['token']
+                                  delete item1['tokens']
                                   delete item1['salt']
                                   res.send(200, {success: true, profile: item1});
                               }
@@ -424,7 +433,7 @@ exports.profile = function(req,res){
                       }
                       else {
                           delete item['pass']
-                          delete item['token']
+                          delete item['tokens']
                           delete item['salt']
                           res.send(200, {success: true, profile: item});
                       }
@@ -448,9 +457,8 @@ exports.getUsers = function(req,res){
     if('login' in req.body && req.body.login)
         {
                 email = info['email'];
-                token = info['token'];
                 db.collection('users',function(err,collection){
-                collection.findOne({'email': email,'token' : token,'role' : 'admin'}, function(err, item) {
+                collection.findOne({'email': email,'role' : 'admin'}, function(err, item) {
                 if(item)
                 {
 
@@ -484,9 +492,8 @@ exports.approve = function(req,res){
         if('login' in req.body && req.body.login)
         {
                 email = info['email'];
-                token = info['token'];
                 db.collection('users',function(err,collection){
-                        collection.findOne({'email': email,'token' : token,'role' : 'admin'}, function(err, item) {
+                        collection.findOne({'email': email,'role' : 'admin'}, function(err, item) {
                         if(item)
                         {
                                 approve_user_id = info['approve_user_id'];
@@ -537,9 +544,8 @@ exports.disapprove = function(req,res){
         if('login' in req.body && req.body.login)
         {
                 email = info['email'];
-                token = info['token'];
                 db.collection('users',function(err,collection){
-                        collection.findOne({'email': email,'token' : token,'role' : 'admin'}, function(err, item) {
+                        collection.findOne({'email': email,'role' : 'admin'}, function(err, item) {
                         if(item)
                         {
 

@@ -26,13 +26,25 @@ else{
 
 module.exports = function(req,res,next){
     var info = req.body;
-    if('email' in info && info['email'] != ''  && 'token' in info && info['token'] != '')
+    if('token' in req && req['token'] != '')
     {
-        email = info['email'];
-        token = info['token'];
+        var decoded = jwt.decode(req['token'], {complete: true});
+        if(decoded && 'payload' in decoded && 'email' in decoded['payload'])
+        {
+            email = decoded['payload']['email']
+            req.body.email = email;
+        }
+        else
+        {
+            req.body.login = false;
+            next();
+            return;
+        }
+        token = req['token'];
+        req.body.token = token
         //console.log('email is ' + email + 'token is ' + token)
         db.collection('users',function(err,collection){
-            collection.findOne({'email': email,'token' : token}, function(err, item) {
+            collection.findOne({'email': email,'tokens' : {'$in' : [token]}}, function(err, item) {
                 if(item)
                 {
                     //console.log('Token not found for the user')
