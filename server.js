@@ -3,6 +3,7 @@ var app = express();
 user = require('./models/users');
 claim = require('./models/claims');
 auth = require('./models/auth');
+vote = require('./models/vote');
 bearerToken = require('express-bearer-token');
 var jwt    = require('jsonwebtoken');
 var config = require('config');
@@ -25,7 +26,8 @@ app.configure(function () {
 app.use(function(req, res, next) {
 
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    //res.header('Access-Control-Expose-Headers', 'Authorization');
     next();
 });
 
@@ -43,6 +45,14 @@ app.post('/password/change',user.passwordChange)
 app.post('/claims',claim.claim)
 app.post('/getClaims',claim.getclaims)
 app.post('/updateClaim',claim.updateClaims)
+
+app.get('/votes',vote.getVotes)
+app.get('/votes/:vote_id',vote.getVote)
+app.post('/votes/:claim_id/register',vote.register)
+//app.post('votes/:/claim_id/archive',vote.archive)
+app.post('/votes/:claim_id/endorse',vote.endorse)
+app.post('/votes/:claim_id/flag',vote.flag)
+
 app.listen(80);
 console.log('server running on port 80');
 module.exports = app;

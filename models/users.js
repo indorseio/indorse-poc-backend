@@ -271,10 +271,10 @@ exports.verify = function(req,res){
 	var info = req.body;
     if('email' in info && info['email'] != ''  && 'verify_token' in info && info['verify_token'] != '')
     {
-                var email = info['email'];
+        var email = info['email'];
 		var verify_token = info['verify_token'];
 		db.collection('users',function(err,collection){
-                        collection.findOne({'email': email,'verify_token' : verify_token}, function(err, item) {
+		    collection.findOne({'email': email,'verify_token' : verify_token}, function(err, item) {
                         if(item)
                         {	
 				delete item['verify_token'];
@@ -410,12 +410,12 @@ exports.profile = function(req,res){
         {       
                 email = info['email'];
                 db.collection('users',function(err,collection){
-                collection.findOne({'email': email,'token' : token}, function(err, item) {
+                collection.findOne({'email': email}, function(err, item) {
                 if(item)
                 {
                       if('user_id' in info && info['user_id'] != '')
                       {
-                          collection.findOne({'_id': new ObjectId(info['user_id']),'token' : token}, function(err, item1) {
+                          collection.findOne({'_id': new ObjectId(info['user_id'])}, function(err, item1) {
 
                               if(item1)
                               {
@@ -465,7 +465,7 @@ exports.getUsers = function(req,res){
                         
                     var users = [];
                     //Log the person out and return success
-                    collection.find({'email' : {'$exists' : true}},{'salt' : 0,'pass' : 0,'token' : 0}).toArray(function(err, results) {
+                    collection.find({'email' : {'$exists' : true}},{'salt' : 0,'pass' : 0,'tokens' : 0}).toArray(function(err, results) {
                     res.send(200,{ success : true, 'users' : results });
                     }, function(err) {
                     // done or error
