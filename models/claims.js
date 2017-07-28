@@ -30,6 +30,52 @@ else{
 }
 });
 
+function create_votes(users,voting_round_id,claim_id)
+{
+    users.forEach(function(user) {
+        vote = {};
+        vote['claim_id'] = claim_id;
+        vote['voter_id'] = user['_id'].toString();
+        vote['voting_round_id'] = voting_round_id;
+        db.collection('votes', function (err, votes_collection) {
+            votes_collection.insert(vote, {safe: true}, function (err, result) {
+            })
+        })
+    });
+}
+
+function create_votinground(claim_id)
+{
+    console.log('calling voting round creationg function for claim id ' + claim_id);
+    db.collection('votingrounds', function (err, votinground_collection) {
+        if(!err) {
+            voting_round = {};
+            voting_round['claim_id'] = claim_id;
+            voting_round['end_registration'] = Math.floor(Date.now() / 1000) + 300;
+            voting_round['end_voting'] = Math.floor(Date.now() / 1000) + 300;
+            voting_round['status'] = 'in_progress';
+            console.log(voting_round)
+            votinground_collection.insert(voting_round, {safe: true}, function (err, result) {
+                if (!err) {
+                    voting_round_id = result['ops'][0]['_id'].toString();
+                    console.log(voting_round_id);
+                    db.collection('users', function (err, users_collection) {
+                        users_collection.find({'email': {'$exists': true}}).toArray(function (err, results) {
+
+                            create_votes(results, voting_round_id,claim_id)
+
+                        })
+                    })
+                }
+
+            })
+        }
+        else
+        {
+            console.log(err)
+        }
+    })
+}
 
 exports.claim = function(req,res){
 
@@ -63,7 +109,16 @@ exports.claim = function(req,res){
                                         res.send(501, {success: false, message: 'Something went wrong'});
                                     }
                                     else {
-                                        res.send(200, {success: true, message: 'Claim has been created'});
+                                        if('result' in result && 'ok' in result['result'] && result['result']['ok'] == 1)
+                                        {
+                                            create_votinground(result['ops'][0]['_id'].toString());
+                                            res.send(200, {success: true, claim:result['ops'], message: 'Claim has been created'});
+                                        }
+                                        else
+                                        {
+                                            res.send(501, {success: false, message: 'Something went wrong'});
+                                        }
+
                                     }
 
                                 })
@@ -123,6 +178,10 @@ exports.updateClaims = function(req,res){
                                         if('visible' in info && info['visible'] != '')
                                         {
                                             currclaim['visible'] = info['visible'];
+                                        }
+                                        if('archive' in info && info['archive'] != '')
+                                        {
+                                            currclaim['archive'] = info['archive'];
                                         }
                                         collection1.update({'_id' : new ObjectID(info['claim_id'])},currclaim,{safe:true}, function(err, result) {
 
