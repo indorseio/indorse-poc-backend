@@ -15,12 +15,10 @@ var parameters = { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 };     //Option
 var sendinObj = new sendinblue(parameters);
 
 if(config.util.getEnv('NODE_ENV') !== 'test') {
-console.log('dev DB');
 db = new Db('indores_registrations', server);
 }
 else
 {
-console.log('test DB');
 db = new Db('indores_test', server);
 }
 db.open(function(err, db) {
@@ -34,9 +32,8 @@ else{
 
 
 exports.claim = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
 	var info = req.body;
 	if('title' in info && info['title'] != '' && 'desc' in info && info['desc'] != '' && 'proof' in info && info['proof'] != '')
@@ -50,41 +47,7 @@ exports.claim = function(req,res){
 
                         if('claim_id' in info && info['claim_id'] !=  '')
                         {
-                            res.send(401, {success: false, message: 'Claim id should not be sent'});
-                            /*db.collection('claims', function (err, collection1) {
-
-                                collection1.findOne({'_id': new ObjectID(info['claim_id']}, function (err, currclaim) {
-
-                                    if(currclaim)
-                                    {
-                                        var claim = {};
-                                        currclaim['title'] = info['title'];
-                                        currclaim['desc'] = info['desc']
-                                        currclaim['proof'] = info['proof'];
-                                        if('visible' in info && info['visible'] != '')
-                                        {
-                                            currclaim['visible'] = info['visible'];
-                                        }
-                                        collection1.update({'_id' : new ObjectID(info['claim_id']},currclaim,{safe:true}, function(err, result) {
-
-                                          if(err)
-                                          {
-                                              res.send(401, {success: false, message: 'Update claim failed'});
-                                          }
-                                          else
-                                          {
-                                              res.send(200, {success: true, message: 'Claim has been updated'});
-                                          }
-
-                                        })
-                                    }
-                                    else
-                                    {
-                                        res.send(401, {success: false, message: 'Claim not found'});
-                                    }
-                                })
-
-                            })*/
+                            res.send(501, {success: false, message: 'Claim id should not be sent'});
                         }
                         else {
                             var claim = {};
@@ -95,11 +58,9 @@ exports.claim = function(req,res){
                             claim['visible'] = true
                             claim['ownerid'] = item['_id'].toString();
                             db.collection('claims', function (err, collection1) {
-                                console.log(err);
-                                console.log(collection1)
                                 collection1.insert(claim, {safe: true}, function (err, result) {
                                     if (err) {
-                                        res.send(401, {success: false, message: 'Something went wrong'});
+                                        res.send(501, {success: false, message: 'Something went wrong'});
                                     }
                                     else {
                                         res.send(200, {success: true, message: 'Claim has been created'});
@@ -114,7 +75,7 @@ exports.claim = function(req,res){
 
                     }
                     else {
-                        res.send(401, {success: false, message: 'User not found'});
+                        res.send(404, {success: false, message: 'User not found'});
                     }
 
                 })
@@ -124,19 +85,18 @@ exports.claim = function(req,res){
 	}
 	else
 	{
-		res.send(401,{ success : false, message : 'Mandatory fields info missing' });
+		res.send(422,{ success : false, message : 'Mandatory fields info missing' });
 	}
     }
-else
-{
-	res.send(401,{ success : false, message : 'Authentication failed' });
-}
+    else
+    {
+	    res.send(401,{ success : false, message : 'Authentication failed' });
+    }
 }
 
 exports.updateClaims = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
         var info = req.body;
         if('title' in info && info['title'] != '' && 'desc' in info && info['desc'] != '' && 'proof' in info && info['proof'] != '')
@@ -151,7 +111,7 @@ exports.updateClaims = function(req,res){
                         if('claim_id' in info && info['claim_id'] !=  '')
                         {
                             db.collection('claims', function (err, collection1) {
-                                console.log(err)
+
                                 collection1.findOne({'_id': new ObjectID(info['claim_id'])}, function (err, currclaim) {
 
                                     if(currclaim)
@@ -168,7 +128,7 @@ exports.updateClaims = function(req,res){
 
                                             if(err)
                                             {
-                                                res.send(401, {success: false, message: 'Update claim failed'});
+                                                res.send(501, {success: false, message: 'Update claim failed'});
                                             }
                                             else
                                             {
@@ -179,21 +139,21 @@ exports.updateClaims = function(req,res){
                                     }
                                     else
                                     {
-                                        res.send(401, {success: false, message: 'Claim not found'});
+                                        res.send(404, {success: false, message: 'Claim not found'});
                                     }
                                 })
 
                             })
                         }
                         else {
-                            res.send(401, {success: false, message: 'Claim id is not found'});
+                            res.send(422, {success: false, message: 'Claim id is not found'});
                         }
 
 
 
                     }
                     else {
-                        res.send(401, {success: false, message: 'User not found'});
+                        res.send(404, {success: false, message: 'User not found'});
                     }
 
                 })
@@ -203,7 +163,7 @@ exports.updateClaims = function(req,res){
         }
         else
         {
-            res.send(401,{ success : false, message : 'Claim info is missing' });
+            res.send(422,{ success : false, message : 'Claim info is missing' });
         }
     }
     else
@@ -213,9 +173,8 @@ exports.updateClaims = function(req,res){
 }
 
 exports.getclaims = function(req,res){
-    //var login =
-    //console.log('login result is ' + login);
-    if(true)
+
+    if('login' in req.body && req.body.login)
     {
         var info = req.body;
         if('user_id' in info && info['user_id'] != '')
@@ -226,7 +185,7 @@ exports.getclaims = function(req,res){
                     {
                         db.collection('claims',function(err,collection1) {
                             if(err){
-                                res.send(401,{ success : false, message : 'Something went wrong' });
+                                res.send(501,{ success : false, message : 'Something went wrong' });
                             }
                             else {
                                 collection1.find({'ownerid': info['user_id']}).toArray(function (err, results) {
@@ -239,7 +198,7 @@ exports.getclaims = function(req,res){
                     }
                     else
                     {
-                        res.send(401,{ success : false, message : 'User not found' });
+                        res.send(404,{ success : false, message : 'User not found' });
                     }
 
                 })
@@ -260,7 +219,7 @@ exports.getclaims = function(req,res){
                         }
                         else
                         {
-                            res.send(401, {success: false, 'message': 'Claim not found'});
+                            res.send(404, {success: false, 'message': 'Claim not found'});
                         }
                     })
                 }
@@ -268,7 +227,7 @@ exports.getclaims = function(req,res){
         }
         else
         {
-            res.send(401,{ success : false, message : 'User id or claim id is missing' });
+            res.send(422,{ success : false, message : 'User id or claim id is missing' });
         }
     }
     else
