@@ -160,3 +160,23 @@ SyntaxError: missing ) after argument list
     at Module.require (module.js:497:17)
     at require (internal/module.js:20:19)
     at Object.<anonymous> (/home/ubuntu/indorse-backend-actual/server.js:4:13)
+WARNING: No configurations found in configuration directory:/Users/gaurangtorvekar/Documents/coding/indorse/ico_indorse/indorse-backend-actual/config
+WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+Sat, 22 Jul 2017 14:34:24 GMT express deprecated app.configure: Check app.get('env') in an if statement at server.js:14:5
+Sat, 22 Jul 2017 14:34:24 GMT connect deprecated multipart: use parser (multiparty, busboy, formidable) npm module instead at node_modules/connect/lib/middleware/bodyParser.js:56:20
+Sat, 22 Jul 2017 14:34:24 GMT connect deprecated limit: Restrict request size at location of read at node_modules/connect/lib/middleware/multipart.js:86:15
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES 0.0.0.0:80
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at Server._listen2 (net.js:1246:19)
+    at listen (net.js:1295:10)
+    at Server.listen (net.js:1391:5)
+    at Function.app.listen (/Users/gaurangtorvekar/Documents/coding/indorse/ico_indorse/indorse-backend-actual/node_modules/express/lib/application.js:590:24)
+    at Object.<anonymous> (/Users/gaurangtorvekar/Documents/coding/indorse/ico_indorse/indorse-backend-actual/server.js:42:5)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
