@@ -454,7 +454,9 @@ exports.profile = function(req,res){
 exports.getUsers = function(req,res){
         var info = req.body;
     var pageNo = req.params.pageNo;
+    var perPage = req.params.perPage;
     if(!pageNo)pageNo = 1;
+    if(!perPage)perPage = 10;
     if('login' in req.body && req.body.login)
         {
                 email = info['email'];
@@ -466,8 +468,8 @@ exports.getUsers = function(req,res){
                         
                     var users = [];
                     //Log the person out and return success
-                    var skip = (pageNo - 1) * 10;
-                    var limit = 10;
+                    var skip = (pageNo - 1) * perPage;
+                    var limit = perPage;
                     collection.find({'email' : {'$exists' : true}},{'salt' : 0,'pass' : 0,'tokens' : 0}).skip(skip).limit(limit).toArray(function(err, results) {
                     res.send(200,{ success : true, 'users' : results });
                     }, function(err) {
