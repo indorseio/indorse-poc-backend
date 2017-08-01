@@ -208,7 +208,7 @@ exports.register = function(req,res){
                         votinground_collection.findOne({'claim_id': claim_id, 'status': 'in_progress'}, function (err, voting_round) {
                             if (voting_round) {
 
-                                if('end_registration' in  voting_round && (voting_round['end_registration'] - Math.floor(Date.now() / 1000) >= -500)) {
+                                if('end_registration' in  voting_round && (voting_round['end_registration'] - Math.floor(Date.now() / 1000) <= 0)) {
                                     db.collection('votes', function (err, votes_collection) {
                                         votes_collection.findOne({
                                             'voter_id': user['_id'].toString(),
@@ -282,7 +282,7 @@ exports.endorse = function(req,res){
                     db.collection('votingrounds', function (err, votinground_collection) {
                         votinground_collection.findOne({'claim_id': claim_id, 'status': 'in_progress'}, function (err, voting_round) {
                             if (voting_round) {
-                                if('end_voting' in  voting_round && (voting_round['end_voting'] - Math.floor(Date.now() / 1000) >= -5000)) {
+                                if('end_voting' in  voting_round && (voting_round['end_voting'] - Math.floor(Date.now() / 1000) <= 0)) {
                                 db.collection('votes', function (err, votes_collection) {
                                     votes_collection.findOne({
                                         'voter_id': user['_id'].toString(),
