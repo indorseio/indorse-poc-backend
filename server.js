@@ -36,7 +36,7 @@ app.post('/verify-email',user.verify)
 app.post('/login',user.login)
 app.post('/logout',user.logout)
 app.post('/me',user.profile)
-app.post('/users',user.getUsers)
+app.get('/users/:pageNo',user.getUsers)
 app.post('/users/approve',user.approve)
 app.post('/users/disapprove',user.disapprove)
 app.post('/password/reset',user.passwordReset)
@@ -53,6 +53,6 @@ app.post('/votes/:claim_id/register',vote.register)
 app.post('/votes/:claim_id/endorse',vote.endorse)
 app.post('/votes/:claim_id/flag',vote.flag)
 
-app.listen(80);
+app.listen(3000);
 console.log('server running on port 80');
 module.exports = app;

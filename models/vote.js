@@ -23,19 +23,94 @@ db.open(function(err, db) {
     }
 });
 
+function find_claim(claim_id)
+{
+        db.collection('claims', function (err, claims_collection) {
+            claims_collection.findOne({'_id' : new ObjectID(claim_id)},function (err, claim) {
+                if(!err)
+                    return claim;
+                else
+                    return null;
+            })
+        })
+}
+
+function find_votinground(votinground_id)
+{
+    db.collection('votingrounds', function (err, votingrounds_collection) {
+        votingrounds_collection.findOne({'_id' : new ObjectID(votinground_id)},function (err, votinground) {
+            if(!err)
+                return votinground;
+            else
+                return null;
+        })
+    })
+}
+
 exports.getVotes = function(req,res){
     if('login' in req.body && req.body.login) {
         var info = req.body;
+	var results_final = [];
         db.collection('users', function (err, collection) {
             collection.findOne({'email': info['email']}, function (err, item) {
                 if(item)
                 {
-                    console.log(item['_id'])
                     db.collection('votes', function (err, collection1) {
-                        collection1.find({'voter_id': item['_id'].toString()}).toArray(function(err, results) {
+                        collection1.find({'voter_id': item['_id'].toString()}).toArray(function(err, votes) {
                             if(!err)
                             {
-                                res.send(200,{ success : true, 'votes' : results });
+                                var claim_ids = [];
+                                var voting_round_ids = [];
+                                var counter = 0;
+                                var limit = votes.length;
+                                votes.forEach(function(vote) {
+                                    counter++;
+                                    result_item = {};
+                                    result_item.vote = vote;
+                                    claim_ids.push(new ObjectID(vote['claim_id']));
+                                    voting_round_ids.push(new ObjectID(vote['voting_round_id']));
+                                    results_final.push(result_item);
+                                })
+                                db.collection('claims', function (err, claims_collection) {
+                                    claims_collection.find({'_id': {'$in' : claim_ids}}).toArray(function(err, claims) {
+
+                                    claims.forEach(function(claim){
+                                        for(var i=0,len = results_final.length;i< len;i++){
+                                            
+                                            if(claim['_id'].toString() == results_final[i].vote.claim_id)
+                                            {
+                                                results_final[i].claim = claim;
+                                            }
+                                            
+                                        }
+
+                                    })
+
+				db.collection('votingrounds', function (err, votingrounds_collection) {
+                                    votingrounds_collection.find({'_id': {'$in' : voting_round_ids}}).toArray(function(err, votingrounds) {
+
+                                    votingrounds.forEach(function(votinground){
+                                        for(var i=0,len = results_final.length;i< len;i++){
+
+                                            if(votinground['_id'].toString() == results_final[i].vote.voting_round_id)
+                                            {
+                                                results_final[i].votinground = votinground;
+                                            }
+
+                                        }
+
+                                    })
+
+
+				console.log(results_final);
+				res.send(200, {success: true, results: results_final});
+                                    })
+                                })
+			
+				})
+				})
+					
+		
                             }
                             else
                             {
@@ -56,7 +131,6 @@ exports.getVotes = function(req,res){
         res.send(401,{ success : false, message : 'Authentication failed' });
     }
 }
-
 exports.getVote = function(req,res){
 
     if('login' in req.body && req.body.login) {
@@ -73,10 +147,28 @@ exports.getVote = function(req,res){
                         collection1.findOne({'_id': new ObjectID(item['claim_id'])},function (err, item1) {
 
                             if(!err)
-                            {
-                                res.send(200,{ success : true,vote : item,claim : item1 });
-                            }
-                            else
+                            {	
+
+				var voting_rounds = [];
+				db.collection('votingrounds', function (err, votinground_collection) {
+
+                        votinground_collection.find({'claim_id': item['claim_id']}).toArray(function (err,votingrounds) {
+					
+
+					if(!err)
+					{
+						res.send(200,{ success : true,vote : item,claim : item1,voting_rounds : votingrounds });
+					}
+					else
+					{
+						res.send(501, {success: false, message: 'Something went wrong'});
+					}
+
+
+				})
+                            })
+			    }
+			    else
                             {
                                 res.send(501, {success: false, message: 'Something went wrong'});
                             }

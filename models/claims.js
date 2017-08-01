@@ -248,12 +248,33 @@ exports.getclaims = function(req,res){
                             }
                             else {
                                 collection1.find({'ownerid': info['user_id']}).toArray(function (err, results) {
-                                    res.send(200, {success: true, 'claims': results});
-                                }, function (err) {
-                                    // done or error
-                                });
-                            }
-                        })
+                                   	
+					var claim_ids = [];
+					results.forEach(function(claim){
+						claim_ids.push(claim['_id'].toString());
+					})
+
+				db.collection('votingrounds', function (err, votinground_collection) {
+                        votinground_collection.find({'claim_id': {'$in' : claim_ids}}).toArray(function (err,votingrounds) {
+					var results_final = [];
+						votingrounds.forEach(function(votinground){
+						
+					for(var i=0,len = results.length;i< len;i++){
+							if(votinground['claim_id'] == results[i]._id.toString())
+							{		
+							var result_item = {};
+							result_item.votinground = votinground;
+							result_item.claim = results[i];
+							results_final.push(result_item)
+							}
+						}
+					})
+				res.send(200, {success: true, 'claims': results_final});
+				})
+				})
+				})
+                                }
+                            })
                     }
                     else
                     {
@@ -267,14 +288,22 @@ exports.getclaims = function(req,res){
         else if('claim_id' in info && info['claim_id'] != '')
         {
             db.collection('claims',function(err,collection){
-
                 if(!err)
                 {
                     collection.findOne({'_id': new ObjectID(info['claim_id'])}, function(err, item) {
                         if (item) {
-
-                            res.send(200, {success: true, 'claim': item});
-
+			db.collection('votingrounds', function (err, votinground_collection) {
+                        votinground_collection.find({'claim_id': info['claim_id']}).toArray(function (err,votingrounds) {
+                                        if(!err)
+                                        {
+                                                res.send(200,{ success : true,claim : item,votingrounds : votingrounds });
+                                        }
+                                        else
+                                        {
+                                                res.send(501, {success: false, message: 'Something went wrong'});
+                                        }
+                                })
+                            })
                         }
                         else
                         {
