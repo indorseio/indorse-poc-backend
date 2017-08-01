@@ -232,7 +232,6 @@ exports.updateClaims = function(req,res){
 }
 
 exports.getclaims = function(req,res){
-
     if('login' in req.body && req.body.login)
     {
         var info = req.body;
@@ -253,37 +252,62 @@ exports.getclaims = function(req,res){
 					results.forEach(function(claim){
 						claim_ids.push(claim['_id'].toString());
 					})
-
-				db.collection('votingrounds', function (err, votinground_collection) {
-                        votinground_collection.find({'claim_id': {'$in' : claim_ids}}).toArray(function (err,votingrounds) {
+					db.collection('votingrounds',function(err,votinground_collection) {
+                        		votinground_collection.find({'claim_id': {'$in' : claim_ids}}).toArray(function (err,votingrounds) {
 					var results_final = [];
-						votingrounds.forEach(function(votinground){
-						
+					var active_voting_round = null;
+					var active_votinground_ids = [];
 					for(var i=0,len = results.length;i< len;i++){
-							if(votinground['claim_id'] == results[i]._id.toString())
-							{		
-							var result_item = {};
+					var result_item = {};
+					result_item.claim = results[i];
+					var item_voting_rounds = [];
+					votingrounds.forEach(function(votinground){
+					if(votinground['claim_id'] == results[i]._id.toString())
+					{
+						if(votinground['status'] == "in_progress")
+						{
 							result_item.votinground = votinground;
-							result_item.claim = results[i];
-							results_final.push(result_item)
-							}
+							active_votinground_ids.push(votinground['_id'].toString());
+							
 						}
+					}
 					})
-				res.send(200, {success: true, 'claims': results_final});
+					results_final.push(result_item);
+					}
+					collection.findOne({'email': info['email']},function(err,user) {
+					if(user)
+					{
+						db.collection('votes', function (err, votes_collection) {		
+							votes_collection.find({'voting_round_id': {'$in' : active_votinground_ids},'voter_id' : user['_id'].toString()}).toArray(function (err,votes) {
+							if(!err)
+							{
+								for(var i=0,len = results_final.length;i< len;i++){
+									votes.forEach(function(vote){
+										if(results_final[i].claim._id.toString() == vote['claim_id'])
+										{
+											results_final[i].vote = vote;
+										}
+									})
+								}
+								res.send(200, {success: true, 'claims': results_final});		
+							}
+						});
+						});		
+					}
+				});
 				})
 				})
 				})
-                                }
-                            })
-                    }
-                    else
-                    {
-                        res.send(404,{ success : false, message : 'User not found' });
-                    }
+				}
 
-                })
-            })
-
+                                })
+                            }
+			    else
+                    		{
+                        		res.send(404,{ success : false, message : 'User not found' });
+                    		}
+                    })
+		    })
         }
         else if('claim_id' in info && info['claim_id'] != '')
         {
@@ -295,8 +319,43 @@ exports.getclaims = function(req,res){
 			db.collection('votingrounds', function (err, votinground_collection) {
                         votinground_collection.find({'claim_id': info['claim_id']}).toArray(function (err,votingrounds) {
                                         if(!err)
-                                        {
-                                                res.send(200,{ success : true,claim : item,votingrounds : votingrounds });
+                                        {	
+						var active_votinground = null;
+						var vote = null;
+						votingrounds.forEach(function(votinground){
+							if(votinground.status == "in_progress")
+							active_votinground = votinground;
+						})
+						if(active_votinground != null)
+						{
+						db.collection('users',function(err,collection){
+							
+						collection.findOne({'email': info['email']},function(err,user) {
+
+						if(user)
+						{		
+							db.collection('votes',function(err,votes_collection){
+								
+							votes_collection.findOne({'voting_round_id': active_votinground['_id'].toString(),'voter_id' : user['_id'].toString() },function(err,vote) {
+	
+								if(vote)
+								{
+									res.send(200,{ success : true,claim : item,votingrounds : votingrounds,vote:vote});
+								}						
+
+							})
+
+							})
+						}
+
+						})	
+
+						})
+						}
+						else
+						{
+							res.send(200,{ success : true,claim : item,votingrounds : votingrounds,vote:vote });		
+						}	
                                         }
                                         else
                                         {
