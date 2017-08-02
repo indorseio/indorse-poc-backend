@@ -17,28 +17,113 @@ db.open(function(err, db) {
     }
 });
 
-function find_claim(claim_id)
-{
-        db.collection('claims', function (err, claims_collection) {
-            claims_collection.findOne({'_id' : new ObjectID(claim_id)},function (err, claim) {
-                if(!err)
-                    return claim;
-                else
-                    return null;
-            })
-        })
-}
+exports.closeVotes = function(req,res){
 
-function find_votinground(votinground_id)
-{
-    db.collection('votingrounds', function (err, votingrounds_collection) {
-        votingrounds_collection.findOne({'_id' : new ObjectID(votinground_id)},function (err, votinground) {
-            if(!err)
-                return votinground;
-            else
-                return null;
+    db.collection('votingrounds', function (err, votinground_collection) {
+
+        votinground_collection.find({'status' : 'in_progress','end_voting' : {'$lt' : Math.floor(Date.now()/1000)}}).toArray(function(err, votingrounds) {
+
+            var votingroundids = [];
+            var votingroundmongoids = [];
+            var claimids = [];
+            votingrounds.forEach(function(votinground){
+                votingroundmongoids.push(votinground['_id']);
+                votingroundids.push(votinground['_id'].toString());
+                claimids.push(new ObjectID(votinground['claim_id']));
+            })
+
+            db.collection('votes', function (err, votes_collection) {
+
+                votes_collection.find({'voting_round_id' : {'$in' : votingroundids}}).toArray(function(err, votes) {
+
+                    var user_ids = [];
+                    votes.forEach(function(vote){
+
+                    user_ids.push(new ObjectID(vote['voter_id']));
+
+                    })
+
+
+                    db.collection('users', function (err, users_collection) {
+
+                        users_collection.find({'_id' : {'$in' : user_ids}}).toArray(function(err, users) {
+
+                            db.collection('claims', function (err, claims_collection) {
+
+                                claims_collection.find({'_id' : {'$in' : claimids}}).toArray(function(err, claims) {
+
+
+                                    var user_ehters = {};
+                                    users.forEach(function(user){
+                                        user_id = user[_id].toString();
+                                        user_ethers.user_id = user['ethaddress'];
+                                    })
+
+                                    var claims_docs = {};
+
+                                    claims.forEach(function(claim){
+                                        claim_id = claim[_id].toString();
+                                        claims_docs.claim_id = claim;
+                                    })
+
+
+                                    var claims_final = {};
+
+                                    votes.forEach(function(vote){
+
+                                        //Find out if this vote has to be considered
+                                        vote_claim_id = vote['claim_id'];
+                                        if(claim_id in claims_docs) {
+                                            vote_claim = claims_docs.claim_id;
+                                            endorse_count = 0;
+                                            flag_count = 0
+                                            if('endorse_count' in vote_claim)endorse_count = vote_claim['endorse_count'];
+                                            if('flag_count' in vote_claim)flag_count = vote_claim['flag_count'];
+
+                                            if((endorse_count >= flag_count && vote['endorsed']) ||  (endorse_count <= flag_count && !vote['endorsed'])) { //This means the vote belongs to majority decision
+
+                                                if (!(vote['claim_id'] in claims_final)) {
+                                                    claims_final.vote['claim_id'] = {};
+                                                    claims_final.vote['claim_id'].eths = [];
+                                                    claims_final.vote['claim_id'].eths.push(vote_claim.owner_id);
+                                                }
+                                                claims_final.vote['claim_id'].eths.push(vote['voter_id']);
+
+                                            }
+                                        }
+
+                                    })
+
+                                    //CALL BLOCKCHAIN FUNCTION HERE
+
+                                    votinground_collection.update({'_id': {'$in' : votingroundmongoids}},{'$set' : {'status' : 'completed'}}, {safe: true}, function (err, result) {
+
+                                        if(!err)
+                                        {
+                                            res.send(200,{success: true});
+                                        }
+
+                                    })
+
+
+
+
+                                })
+
+                            })
+                        })
+
+                    })
+
+                })
+            })
+
         })
+
     })
+
+
+
 }
 
 exports.getVotes = function(req,res){
