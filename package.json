@@ -22,7 +22,7 @@
     "mocha": "^2.4.5"
   },
   "scripts": {
-    "start": "forever start -l forever.log -o out.log -e err.log -a server.js",
+    "start": "export NODE_ENV=dev && forever start -l forever.log -o out.log -e err.log -a server.js",
     "stop": "forever stop server.js",
     "test": "mocha --timeout 100000"
   }
