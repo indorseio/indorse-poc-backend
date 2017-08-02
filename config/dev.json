@@ -4,5 +4,6 @@
 	"DBPort" : 27017,
 	"DBHost" : "localhost",
 	"sendinblue_params" : { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 },
-	"jwtsecret" : "indorseiosecret"
+	"jwtsecret" : "indorseiosecret",
+	"voteperiod" : 900
 }

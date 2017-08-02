@@ -46,8 +46,8 @@ function create_votinground(claim_id)
         if(!err) {
             voting_round = {};
             voting_round['claim_id'] = claim_id;
-            voting_round['end_registration'] = Math.floor(Date.now() / 1000) + 300;
-            voting_round['end_voting'] = Math.floor(Date.now() / 1000) + 300;
+            voting_round['end_registration'] = Math.floor(Date.now() / 1000) + config.get('voteperiod');
+            voting_round['end_voting'] = Math.floor(Date.now() / 1000) + config.get('voteperiod');
             voting_round['status'] = 'in_progress';
             console.log(voting_round)
             votinground_collection.insert(voting_round, {safe: true}, function (err, result) {
