@@ -7,7 +7,6 @@ vote = require('./models/vote');
 bearerToken = require('express-bearer-token');
 var jwt    = require('jsonwebtoken');
 var config = require('config');
-app.set('indorseSecret','testindorseapp');
 
 let options = {
     server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },

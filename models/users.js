@@ -178,7 +178,7 @@ exports.passwordReset = function(req,res){
                         delete user_item['pass'];
                         delete user_item['salt'];
                         delete user_item['tokens'];
-                        var token = jwt.sign(user_item, req.app.get(config.get('jwtsecret')), {
+                        var token = jwt.sign(user_item,config.get('jwtsecret'), {
                             expiresIn : 60*60*24*31 // expires in 31 days
                         });
                         if(!('tokens' in item))
@@ -277,7 +277,7 @@ exports.verify = function(req,res){
 				delete user_item['pass'];
 				delete user_item['salt'];
 				delete user_item['tokens'];
-				var token = jwt.sign(user_item, req.app.get(config.get('jwtsecret')), {
+				var token = jwt.sign(user_item,config.get('jwtsecret'), {
                                         expiresIn : 60*60*24*31 // expires in 31 days
                                 });
 				if(!('tokens' in item))
@@ -364,7 +364,7 @@ exports.login = function(req,res){
                 delete user_item['pass'];
                 delete user_item['salt'];
                 delete user_item['tokens'];
-			    var token = jwt.sign(user_item, req.app.get(config.get('jwtsecret')), {
+			    var token = jwt.sign(user_item,config.get('jwtsecret'), {
                                         expiresIn : 60*60*24*31 // expires in 31 days
                 });
                 if(!('tokens' in item))

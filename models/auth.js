@@ -42,7 +42,7 @@ module.exports = function(req,res,next){
                 if(item)
                 {
                     //console.log('Token not found for the user')
-                    jwt.verify(token, 'testindorseapp', function(err, decoded) {
+                    jwt.verify(token,config.get('jwtsecret'), function(err, decoded) {
                         if (err) {
                             console.log('JWT verification failed')
                             req.body.login = false;
