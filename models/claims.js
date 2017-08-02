@@ -6,7 +6,8 @@ var Server = mongo.Server,
     BSON = mongo.BSONPure;
     ObjectID = mongo.ObjectID;
 var jwt    = require('jsonwebtoken');
-var server = new Server('localhost', 27017, {auto_reconnect: true});
+var server = new Server(config.get('DBHost'),config.get('DBPort'), {auto_reconnect: true});
+var db = new Db(config.get('DBName'), server);
 var passwordHash = require('password-hash');
 var randtoken = require('rand-token');
 var crypto = require('crypto');
@@ -14,13 +15,7 @@ var sendinblue = require('sendinblue-api');
 var parameters = { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 };     //Optional parameter: Timeout in MS 
 var sendinObj = new sendinblue(parameters);
 
-if(config.util.getEnv('NODE_ENV') !== 'test') {
-db = new Db('indores_registrations', server);
-}
-else
-{
-db = new Db('indores_test', server);
-}
+
 db.open(function(err, db) {
     if(!err) {
         console.log("Connected to database");
