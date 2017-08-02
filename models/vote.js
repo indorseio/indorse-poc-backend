@@ -6,14 +6,8 @@ var Server = mongo.Server,
     BSON = mongo.BSONPure;
 ObjectID = mongo.ObjectID;
 var jwt    = require('jsonwebtoken');
-var server = new Server('localhost', 27017, {auto_reconnect: true});
-if(config.util.getEnv('NODE_ENV') !== 'test') {
-    db = new Db('indores_registrations', server);
-}
-else
-{
-    db = new Db('indores_test', server);
-}
+var server = new Server(config.get('DBHost'),config.get('DBPort'), {auto_reconnect: true});
+var db = new Db(config.get('DBName'), server);
 db.open(function(err, db) {
     if(!err) {
         console.log("Connected to database");

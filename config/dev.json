@@ -1,3 +1,8 @@
 {
-	"DBName" : "indores_registrations"
+	"port" : 3000,
+	"DBName" : "indores_registrations",
+	"DBPort" : 27017,
+	"DBHost" : "localhost",
+	"sendinblue_params" : { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 },
+	"jwtsecret" : "indorseiosecret"
 }

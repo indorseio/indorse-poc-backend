@@ -52,7 +52,6 @@ app.post('/votes/:claim_id/register',vote.register)
 //app.post('votes/:/claim_id/archive',vote.archive)
 app.post('/votes/:claim_id/endorse',vote.endorse)
 app.post('/votes/:claim_id/flag',vote.flag)
-
-app.listen(3000);
-console.log('server running on port 80');
+app.listen(config.get('port'));
+console.log('server running on port ' + config.get('port'));
 module.exports = app;
