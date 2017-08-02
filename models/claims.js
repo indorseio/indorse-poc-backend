@@ -55,11 +55,10 @@ function create_votinground(claim_id)
                     voting_round_id = result['ops'][0]['_id'].toString();
                     console.log(voting_round_id);
                     db.collection('users', function (err, users_collection) {
-                        users_collection.find({'email': {'$exists': true}}).toArray(function (err, results) {
-
-                            create_votes(results, voting_round_id,claim_id)
-
-                        })
+                                var  limit = 5;
+                                users_collection.aggregate({'$sample': {'size': limit}}).toArray(function (err, results) {
+                                    create_votes(results, voting_round_id, claim_id)
+                                })
                     })
                 }
 
