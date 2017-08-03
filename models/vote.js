@@ -1,6 +1,7 @@
 var mongo = require('mongodb');
 var config = require('config');
 var auth = require('./auth.js');
+var score_token = require('./score_token.js');
 var Server = mongo.Server,
     Db = mongo.Db,
     BSON = mongo.BSONPure;
@@ -21,7 +22,7 @@ exports.closeVotes = function(req,res){
 
     db.collection('votingrounds', function (err, votinground_collection) {
 
-        votinground_collection.find({'status' : 'in_progress','end_voting' : {'$gt' : Math.floor(Date.now()/1000)}}).toArray(function(err, votingrounds) {
+        votinground_collection.find({'status' : 'in_progress','end_voting' : {'$lt' : Math.floor(Date.now()/1000)}}).toArray(function(err, votingrounds) {
 
             var votingroundids = [];
             var votingroundmongoids = [];
@@ -103,7 +104,9 @@ exports.closeVotes = function(req,res){
                                         claim = claims_final[claim_id];
                                         var arr = claim.eths;
                                         console.log(arr);
-
+                                        score_token.data.increase_score(arr, function(err, result){
+                                                console.log(result);
+                                        });
                                         //CALL BLOCKCHAIN FUNCTION HERE with arr
 
                                     }
