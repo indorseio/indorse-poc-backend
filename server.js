@@ -4,6 +4,7 @@ user = require('./models/users');
 claim = require('./models/claims');
 auth = require('./models/auth');
 vote = require('./models/vote');
+score = require('./models/score_token');
 bearerToken = require('express-bearer-token');
 var jwt    = require('jsonwebtoken');
 var config = require('config');
@@ -44,6 +45,9 @@ app.post('/password/change',user.passwordChange)
 app.post('/claims',claim.claim)
 app.post('/getClaims',claim.getclaims)
 app.post('/updateClaim',claim.updateClaims)
+
+// Blockchain APIs
+app.get('/test', score.scores)
 
 app.get('/votes',vote.getVotes)
 app.get('/votes/:vote_id',vote.getVote)
