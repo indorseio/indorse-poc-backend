@@ -38,7 +38,7 @@ module.exports = function(req,res,next){
         req.body.token = token
         //console.log('email is ' + email + 'token is ' + token)
         db.collection('users',function(err,collection){
-            collection.findOne({'email': email,'tokens' : {'$in' : [token]}}, function(err, item) {
+            collection.findOne({'email': email,'approved' : true,'tokens' : {'$in' : [token]}}, function(err, item) {
                 if(item)
                 {
                     //console.log('Token not found for the user')
