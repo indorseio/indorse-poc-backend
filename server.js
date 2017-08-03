@@ -55,7 +55,7 @@ app.post('/votes/:claim_id/register',vote.register)
 //app.post('votes/:/claim_id/archive',vote.archive)
 app.post('/votes/:claim_id/endorse',vote.endorse)
 app.post('/votes/:claim_id/flag',vote.flag)
-app.post('/closevotes',vote.closeVotes)
+app.get('/closevotes',vote.closeVotes)
 app.listen(config.get('port'));
 console.log('server running on port ' + config.get('port') + 'succesfully');
 module.exports = app;

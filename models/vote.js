@@ -43,69 +43,83 @@ exports.closeVotes = function(req,res){
 
                     })
 
+                    
 
-                    db.collection('users', function (err, users_collection) {
-
-                        users_collection.find({'_id' : {'$in' : user_ids}}).toArray(function(err, users) {
-
-                            db.collection('claims', function (err, claims_collection) {
+                    db.collection('claims', function (err, claims_collection) {
 
                                 claims_collection.find({'_id' : {'$in' : claimids}}).toArray(function(err, claims) {
-
-
-                                    var user_ehters = {};
-                                    users.forEach(function(user){
-                                        user_id = user[_id].toString();
-                                        user_ethers.user_id = user['ethaddress'];
-                                    })
-
+                    
                                     var claims_docs = {};
 
                                     claims.forEach(function(claim){
-                                        claim_id = claim[_id].toString();
-                                        claims_docs.claim_id = claim;
+                                        claim_id = claim['_id'].toString();
+                                        claims_docs[claim_id] = claim;
+                                        user_ids.push(new ObjectID(claim['ownerid']));
                                     })
 
+                                    db.collection('users', function (err, users_collection) {
+
+                                         users_collection.find({'_id' : {'$in' : user_ids}}).toArray(function(err, users) {
+
+                                    var user_ethers = {};
+                                    users.forEach(function(user){
+                                        user_id = user['_id'].toString();
+                                        user_ethers[user_id] = user['ethaddress'];
+                                    })
 
                                     var claims_final = {};
 
                                     votes.forEach(function(vote){
 
+                                        if('voted_at' in vote && 'endorsed' in vote)
+                                        {  
+
                                         //Find out if this vote has to be considered
-                                        vote_claim_id = vote['claim_id'];
-                                        if(claim_id in claims_docs) {
-                                            vote_claim = claims_docs.claim_id;
+                                        if(vote['claim_id'] in claims_docs) {
+                                            vote_claim = claims_docs[vote['claim_id']];
                                             endorse_count = 0;
                                             flag_count = 0
                                             if('endorse_count' in vote_claim)endorse_count = vote_claim['endorse_count'];
                                             if('flag_count' in vote_claim)flag_count = vote_claim['flag_count'];
-
+                                            
                                             if((endorse_count >= flag_count && vote['endorsed']) ||  (endorse_count <= flag_count && !vote['endorsed'])) { //This means the vote belongs to majority decision
 
                                                 if (!(vote['claim_id'] in claims_final)) {
-                                                    claims_final.vote['claim_id'] = {};
-                                                    claims_final.vote['claim_id'].eths = [];
-                                                    claims_final.vote['claim_id'].eths.push(vote_claim.owner_id);
+                                                    claims_final[vote['claim_id']] = {};
+                                                    claims_final[vote['claim_id']].eths = [];
+                                                    if(endorse_count >= flag_count)
+                                                    {
+                                                        claims_final[vote['claim_id']].eths.push(user_ethers[vote_claim.ownerid]);
+                                                    }
                                                 }
-                                                claims_final.vote['claim_id'].eths.push(vote['voter_id']);
-
+                                                claims_final[vote['claim_id']].eths.push(user_ethers[vote['voter_id']]);
                                             }
                                         }
-
+                                    }
                                     })
+                                    console.log(claims_final);
+                                    for(var claim_id in claims_final)
+                                    {
+                                        claim = claims_final[claim_id];
+                                        var arr = claim.eths;
+                                        console.log(arr);
 
-                                    //CALL BLOCKCHAIN FUNCTION HERE
+                                        //CALL BLOCKCHAIN FUNCTION HERE with arr
 
-                                    votinground_collection.update({'_id': {'$in' : votingroundmongoids}},{'$set' : {'status' : 'completed'}}, {safe: true}, function (err, result) {
+                                    }
+
+                                    
+
+                                    /*votinground_collection.updateMany({'_id': {'$in' : votingroundmongoids}},{'$set' : {'status' : 'completed'}}, {safe: true}, function (err, result) {
 
                                         if(!err)
                                         {
                                             res.send(200,{success: true});
                                         }
 
-                                    })
+                                    })*/
 
-
+                                    res.send(200,{success: true});
 
 
                                 })
@@ -295,7 +309,7 @@ exports.register = function(req,res){
 
                                             if (!err) {
 
-                                                vote['registered'] = 'true';
+                                                vote['registered'] = true;
                                                 vote['registered_at'] = Math.floor(Date.now() / 1000);
                                                 console.log(vote);
                                                 votes_collection.update({'_id': vote['_id']}, vote, {safe: true}, function (err, result) {
@@ -370,7 +384,7 @@ exports.endorse = function(req,res){
 
                                             if (!('endorsed' in vote))
                                             {
-                                                vote['endorsed'] = 'true';
+                                                vote['endorsed'] = true;
                                             vote['voted_at'] = Math.floor(Date.now() / 1000);
                                             votes_collection.update({'_id': vote['_id']}, vote, {safe: true}, function (err, result) {
                                                 if (!err) {
@@ -455,7 +469,7 @@ exports.flag = function(req,res){
                                         }, function (err, vote) {
                                             if (!err) {
                                                 if (!('endorsed' in vote)) {
-                                                    vote['endorsed'] = 'false';
+                                                    vote['endorsed'] = false;
                                                     vote['voted_at'] = Math.floor(Date.now() / 1000);
                                                     votes_collection.update({'_id': vote['_id']}, vote, {safe: true}, function (err, result) {
                                                         if (!err) {
