@@ -277,19 +277,19 @@ exports.verify = function(req,res){
 				delete user_item['pass'];
 				delete user_item['salt'];
 				delete user_item['tokens'];
-				var token = jwt.sign(user_item,config.get('jwtsecret'), {
-                                        expiresIn : 60*60*24*31 // expires in 31 days
-                                });
+				//var token = jwt.sign(user_item,config.get('jwtsecret'), {
+                //                       expiresIn : 60*60*24*31 // expires in 31 days
+                //                });
 				if(!('tokens' in item))
                 {
                     item['tokens'] = [];
                 }
-                item['tokens'].push(token);
+                //item['tokens'].push(token);
 				collection.update({'email' : info['email']},item,{safe:true}, function(err, result) {
 				if (err) {
                                 	    res.send(501,{ success : false, message : 'Error verifying the user' });
 				} else {
-					res.send(200,{ success : true, message : 'user verified succesfully', token : token});	
+					res.send(200,{ success : true, message : 'user verified succesfully'});	
                                    }
                                 });
 			}
@@ -352,7 +352,7 @@ exports.login = function(req,res){
         email = info['email'];
         password = info['password'];
 		db.collection('users',function(err,collection){
-		    collection.findOne({'email': email}, function(err, item) {
+		    collection.findOne({'email': email,'approved' : true}, function(err, item) {
                 if(item)
                 {
 			salt = item['salt'];
