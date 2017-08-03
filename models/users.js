@@ -77,7 +77,7 @@ exports.signup = function(req,res){
                 		}
                 		else
                 		{	
-                                	var msg_text = "Hello here is the verify link https://indorse-staging.herokuapp.com/verify-email?email=" + email + "&token=" + info['verify_token'];
+                                	    var msg_text = "Dear " + name + ", <br><br> Thank you for signing-up at Indorse.io.  Welcome to the Indorse community.  For the purposes of verification, we request you to click on the following link to verify your email address: <br><br> <a href='" + config.get('app_url')   + "verify-email?email=" + email + "&token=" + info['verify_token'] + "'>Verification link</a> <br><br> If you have not signed-up on Indorse.io, we request you to kindly ignore this email.  We apologise for the inconvenience this may have caused you. <br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
                                         var sub_text = 'Your email verification link from Indorse';
                                         var to_obj = {};
                                         to_obj[email] = name;
@@ -126,8 +126,9 @@ exports.passwordForgot = function(req,res){
                                 {
 					name = item['name']
 					email = item['email']
-					var msg_text = "Hello here is the forgot passsword link https://indorse-staging.herokuapp.com/password/reset?email=" + email + "&pass_token=" + pass_verify_token;
-					var sub_text = 'Your forgot password link from Indorse';
+					//var msg_text = "Hello here is the forgot passsword link https://indorse-staging.herokuapp.com/password/reset?email=" + email + "&pass_token=" + pass_verify_token;
+					var msg_text = "Dear " + name + ", <br><br> We have received a request to reset your password.  If this request was not made by you, we suggest you ignore this email.  However, if you have made this request, we will require you to visit the following link to reset your password: <br><br> <a href='" + config.get('app_url')  + "password/reset?email=" + email + "&pass_token=" + pass_verify_token + "'>Password reset link</a> <br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
+                    var sub_text = 'Your forgot password link from Indorse';
 					var to_obj = {};
 					to_obj[email] = name;
     					sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
@@ -289,6 +290,11 @@ exports.verify = function(req,res){
 				if (err) {
                                 	    res.send(501,{ success : false, message : 'Error verifying the user' });
 				} else {
+
+
+
+
+
 					res.send(200,{ success : true, message : 'user verified succesfully'});	
                                    }
                                 });
