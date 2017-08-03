@@ -226,7 +226,9 @@ const scr_token_abi = [{
     "type": "event"
 }]
 
-function increase_score(arr, callback) {
+var methods = {};
+
+methods.increase_score = function(arr, callback) {
     var args = Array.prototype.slice.call(arguments);
     // console.log(args[0][1]);
     for (var i = 0; i < arr.length; i++) {
@@ -278,12 +280,13 @@ function increase_score(arr, callback) {
     
 }
 
-// module.exports = increase_score();
+exports.data = methods;
 
-exports.scores = function(req, res) {
-    var arr = ['0x00A232459F6626Cf5a64f7daA155a4999EF1eA38', '0x790e33f19e42A380bF9Ae50662874560C020CFDE'];
+/*
+function scores(arr) {
+    //var arr = ['0x00A232459F6626Cf5a64f7daA155a4999EF1eA38', '0x790e33f19e42A380bF9Ae50662874560C020CFDE'];
     increase_score(arr, function(err, result){
         console.log(result);
     });
-    res.send("In the function");
-}
+    //res.send("In the function");
+}*/
