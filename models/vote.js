@@ -21,7 +21,7 @@ exports.closeVotes = function(req,res){
 
     db.collection('votingrounds', function (err, votinground_collection) {
 
-        votinground_collection.find({'status' : 'in_progress','end_voting' : {'$lt' : Math.floor(Date.now()/1000)}}).toArray(function(err, votingrounds) {
+        votinground_collection.find({'status' : 'in_progress','end_voting' : {'$gt' : Math.floor(Date.now()/1000)}}).toArray(function(err, votingrounds) {
 
             var votingroundids = [];
             var votingroundmongoids = [];
@@ -110,16 +110,16 @@ exports.closeVotes = function(req,res){
 
                                     
 
-                                    /*votinground_collection.updateMany({'_id': {'$in' : votingroundmongoids}},{'$set' : {'status' : 'completed'}}, {safe: true}, function (err, result) {
+                                    votinground_collection.updateMany({'_id': {'$in' : votingroundmongoids}},{'$set' : {'status' : 'completed'}}, {safe: true}, function (err, result) {
 
                                         if(!err)
                                         {
                                             res.send(200,{success: true});
                                         }
 
-                                    })*/
+                                    })
 
-                                    res.send(200,{success: true});
+                                    //res.send(200,{success: true});
 
 
                                 })
