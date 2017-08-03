@@ -6,5 +6,6 @@
 	"sendinblue_params" : { "apiKey": "zBNScm5pPbYZaVUL", "timeout": 5000 },
 	"jwtsecret" : "indorseiosecret",
 	"voteperiod" : 1800,  //Relative to the time when claim has been created. In this case voting ends 30 mins after claim is created
-	"registerperiod" : 900 // Relative to the time when claim has been created. In this case voting ends 15 mins after claim is created
+	"registerperiod" : 900, // Relative to the time when claim has been created. In this case voting ends 15 mins after claim is created
+	"app_url" : "https://indorse-app-staging.herokuapp.com/"
 }
