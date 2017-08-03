@@ -48,7 +48,7 @@ app.post('/getClaims',claim.getclaims)
 app.post('/updateClaim',claim.updateClaims)
 
 // Blockchain APIs
-app.get('/test', score.test)
+app.get('/test', score.scores)
 
 app.get('/votes',vote.getVotes)
 app.get('/votes/:vote_id',vote.getVote)
