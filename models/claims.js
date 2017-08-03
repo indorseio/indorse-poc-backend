@@ -40,7 +40,7 @@ function create_votes(users, voting_round_id, claim_id) {
     });
 }
 
-function create_votinground(claim_id) {
+function create_votinground(claim_id,owner_id) {
     console.log('calling voting round creationg function for claim id ' + claim_id);
     db.collection('votingrounds', function(err, votinground_collection) {
         if (!err) {
@@ -58,7 +58,7 @@ function create_votinground(claim_id) {
                     console.log(voting_round_id);
                     db.collection('users', function (err, users_collection) {
                                 var  limit = 5;
-                                users_collection.aggregate({'$sample': {'size': limit}}).toArray(function (err, results) {
+                                users_collection.find({'_id': {'$ne': new ObjectID(owner_id)}}).limit(limit).toArray(function (err, results) {
                                     create_votes(results, voting_round_id, claim_id)
                                 })
 
@@ -110,7 +110,7 @@ exports.claim = function(req, res) {
                                         });
                                     } else {
                                         if ('result' in result && 'ok' in result['result'] && result['result']['ok'] == 1) {
-                                            create_votinground(result['ops'][0]['_id'].toString());
+                                            create_votinground(result['ops'][0]['_id'].toString(),claim['ownerid']);
                                             res.send(200, {
                                                 success: true,
                                                 claim: result['ops'],
