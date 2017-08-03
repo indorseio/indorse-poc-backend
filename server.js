@@ -4,6 +4,7 @@ user = require('./models/users');
 claim = require('./models/claims');
 auth = require('./models/auth');
 vote = require('./models/vote');
+score = require('./models/score_token');
 bearerToken = require('express-bearer-token');
 var jwt    = require('jsonwebtoken');
 var config = require('config');
@@ -46,6 +47,9 @@ app.post('/claims',claim.claim)
 app.post('/getClaims',claim.getclaims)
 app.post('/updateClaim',claim.updateClaims)
 
+// Blockchain APIs
+app.get('/test', score.test)
+
 app.get('/votes',vote.getVotes)
 app.get('/votes/:vote_id',vote.getVote)
 app.post('/votes/:claim_id/register',vote.register)
@@ -54,5 +58,5 @@ app.post('/votes/:claim_id/endorse',vote.endorse)
 app.post('/votes/:claim_id/flag',vote.flag)
 
 app.listen(3000);
-console.log('server running on port 80');
+console.log('server running on port 3000');
 module.exports = app;

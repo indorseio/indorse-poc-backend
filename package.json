@@ -6,6 +6,10 @@
   "main": "server.js",
   "dependencies": {
     "config": "^1.20.1",
+    "ethereumjs-tx": "^1.3.3",
+    "ethjs-provider-signer": "^0.1.4",
+    "ethjs-query": "^0.2.6",
+    "ethjs-signer": "^0.1.1",
     "express": "3.x",
     "express-bearer-token": "^2.1.0",
     "forever": "^0.15.3",
@@ -14,12 +18,14 @@
     "morgan": "^1.8.2",
     "password-hash": "^1.2.2",
     "rand-token": "^0.3.0",
-    "sendinblue-api": "^1.0.8"
+    "sendinblue-api": "^1.0.8",
+    "web3": "^0.19.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "nodemon": "^1.11.0"
   },
   "scripts": {
     "start": "forever start -l forever.log -o out.log -e err.log -a server.js",
