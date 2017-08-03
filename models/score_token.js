@@ -226,40 +226,64 @@ const scr_token_abi = [{
     "type": "event"
 }]
 
-exports.test = function(req, res) {
-    console.log("In the function inside score token");
-    var privateKey = new Buffer(process.env.exp_priv_key, 'hex');
+function increase_score(arr, callback) {
+    var args = Array.prototype.slice.call(arguments);
+    // console.log(args[0][1]);
+    for (var i = 0; i < arr.length; i++) {
+        // Now the actual call to the contract ==============================
+        var address_SCR = "0xc21931a3e96f859A52B89f38e13E6eE17e6eE602";
+        console.log("Address of the user = ", arr[i]);
+        var SCRContract = web3.eth.contract(scr_token_abi);
+        var SCR_instance = SCRContract.at(address_SCR);
+        // console.log(SCR_instance);
+        var scr_call_data = SCR_instance.transferFrom.getData(0x0, arr[i], 1);
 
-    nonce =  web3.eth.getTransactionCount('0xca6a8f8424c5002e994014c98044b6e68b998821');
-	nonceHex = web3.toHex(nonce);
-	var gasLimit = web3.toHex('250000');
-	console.log('nonce (transaction count on 0xca6a8f8424c5002e994014c98044b6e68b998821): ' + nonce + '(' + nonceHex + ')');
+        var privateKey = new Buffer(process.env.exp_priv_key, 'hex');
 
-    var rawTx = {
-        nonce: nonceHex,
-        gasPrice: '0x09184e72a000', 
-  		gasLimit: gasLimit,
-        to: '0x6e6F5adA1D440D103F1e5D9218E0CF7E420D9Edf',
-        value: 100000000,
-        data: '0x7f7465737432000000000000000000000000000000000000000000000000000000600057'
-    }
+        nonce = web3.eth.getTransactionCount('0xca6a8f8424c5002e994014c98044b6e68b998821');
+        nonceHex = web3.toHex(nonce);
+        var gasLimit = web3.toHex('300000');
 
-    var tx = new Tx(rawTx);
-    tx.sign(privateKey);
+        console.log('nonce (transaction count on 0xca6a8f8424c5002e994014c98044b6e68b998821): ' + nonce + '(' + nonceHex + ')');
 
-    var serializedTx = tx.serialize();
-
-    console.log("TXN serialized =", serializedTx.toString('hex'));
-    
-    var SCRContract = web3.eth.contract(scr_token_abi);
-
-    web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
-        if (!err){
-    		console.log("Hash of the TXN = ", hash); 
-        } else {
-        	console.log(err);
+        var rawTx = {
+            nonce: nonceHex,
+            gasPrice: '0x09184e72a000',
+            gasLimit: gasLimit,
+            to: address_SCR,
+            value: 0,
+            data: scr_call_data
         }
+
+        var tx = new Tx(rawTx);
+        tx.sign(privateKey);
+
+        var serializedTx = tx.serialize();
+
+        var hex_serialized = '0x' + serializedTx.toString('hex');
+        console.log("TXN serialized =", hex_serialized);
+
+        web3.eth.sendRawTransaction(hex_serialized, function(err, hash) {
+            if (!err) {
+                console.log("Hash of the TXN = ", hash);
+            } else {
+                console.log(err);
+            }
+        });
+        // Done with the actual call to the contract ==============================
+        if(i == arr.length - 1){
+            callback(null, "Increased the score of all addresses");
+        }
+    }
+    
+}
+
+// module.exports = increase_score();
+
+exports.scores = function(req, res) {
+    var arr = ['0x00A232459F6626Cf5a64f7daA155a4999EF1eA38', '0x790e33f19e42A380bF9Ae50662874560C020CFDE'];
+    increase_score(arr, function(err, result){
+        console.log(result);
     });
     res.send("In the function");
-
 }
