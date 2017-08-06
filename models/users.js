@@ -12,17 +12,25 @@ var crypto = require('crypto');
 var sendinblue = require('sendinblue-api'); 
 var parameters = config.get('sendinblue_params')//Optional parameter: Timeout in MS 
 var sendinObj = new sendinblue(parameters);
-var db = new Db(config.get('DBName'), server);
+// var db = new Db(config.get('DBName'), server);
 
-db.open(function(err, db) {
-    if(!err) {
-        console.log("Connected to database");
-}
-else{
-	console.log("database connection error");
-}
+// db.open(function(err, db) {
+//     if(!err) {
+//         console.log("Connected to database");
+// }
+// else{
+// 	console.log("database connection error");
+// }
+// });
+
+// Now set up a Mongo Client ====
+const MongoClient = mongo.MongoClient
+var db;
+
+MongoClient.connect(process.env.poc_mongo, function(err, database) {
+    if (err) return console.log(err);
+    db = database;
 });
-
 
 var genRandomString = function(length){
     return crypto.randomBytes(Math.ceil(length/2))

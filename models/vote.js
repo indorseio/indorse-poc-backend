@@ -8,14 +8,23 @@ var Server = mongo.Server,
 ObjectID = mongo.ObjectID;
 var jwt    = require('jsonwebtoken');
 var server = new Server(config.get('DBHost'),config.get('DBPort'), {auto_reconnect: true});
-var db = new Db(config.get('DBName'), server);
-db.open(function(err, db) {
-    if(!err) {
-        console.log("Connected to database");
-    }
-    else{
-        console.log("database connection error");
-    }
+// var db = new Db(config.get('DBName'), server);
+// db.open(function(err, db) {
+//     if(!err) {
+//         console.log("Connected to database");
+//     }
+//     else{
+//         console.log("database connection error");
+//     }
+// });
+
+// Now set up a Mongo Client ====
+const MongoClient = mongo.MongoClient
+var db;
+
+MongoClient.connect(process.env.poc_mongo, function(err, database) {
+    if (err) return console.log(err);
+    db = database;
 });
 
 exports.closeVotes = function(req,res){
