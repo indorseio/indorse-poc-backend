@@ -366,9 +366,11 @@ exports.login = function(req,res){
         email = info['email'];
         password = info['password'];
 		db.collection('users',function(err,collection){
-		    collection.findOne({'email': email,'approved' : true}, function(err, item) {
+		    collection.findOne({'email': email}, function(err, item) {
                 if(item)
                 {
+            if('approved' in item && item['approved'])
+            {
 			salt = item['salt'];
 			storedpass = item['pass'];
 			var passwordData = sha512(password, salt);
@@ -398,6 +400,11 @@ exports.login = function(req,res){
 			{
 				res.send(401,{ success : false, message : 'Email and password do not match' });
 			}
+        }
+        else
+        {
+            res.send(404,{ success : false, message : 'User is not yet approved' });
+        }
 		}
 		else
 		{
