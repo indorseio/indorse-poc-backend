@@ -18,12 +18,21 @@ var parameters = {
 }; //Optional parameter: Timeout in MS 
 var sendinObj = new sendinblue(parameters);
 
-db.open(function(err, db) {
-    if (!err) {
-        console.log("Connected to database");
-    } else {
-        console.log("database connection error");
-    }
+// db.open(function(err, db) {
+//     if (!err) {
+//         console.log("Connected to database");
+//     } else {
+//         console.log("database connection error");
+//     }
+// });
+
+// Now set up a Mongo Client ====
+const MongoClient = mongo.MongoClient;
+var db;
+
+MongoClient.connect(process.env.poc_mongo, function(err, database) {
+    if (err) return console.log(err);
+    db = database;
 });
 
 function create_votes(users, voting_round_id, claim_id) {
