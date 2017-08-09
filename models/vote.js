@@ -147,9 +147,6 @@ exports.closeVotes = function(req,res){
         })
 
     })
-
-
-
 }
 
 exports.getVotes = function(req,res){
@@ -219,21 +216,21 @@ exports.getVotes = function(req,res){
                             }
                             else
                             {
-                                res.send(501, {success: false, message: 'Something went wrong'});
+                                res.send(501, {success: false, message: config.get('Msg10')});
                             }
                         })
                     })
                 }
                 else
                 {
-                    res.send(404, {success: false, message: 'Current user not found'});
+                    res.send(404, {success: false, message: config.get('Msg41')});
                 }
             })
         })
     }
     else
     {
-        res.send(401,{ success : false, message : 'Authentication failed' });
+        res.send(401,{ success : false, message : config.get('Msg28') });
     }
 }
 exports.getVote = function(req,res){
@@ -266,7 +263,7 @@ exports.getVote = function(req,res){
 					}
 					else
 					{
-						res.send(501, {success: false, message: 'Something went wrong'});
+						res.send(501, {success: false, message: config.get('Msg10')});
 					}
 
 
@@ -275,7 +272,7 @@ exports.getVote = function(req,res){
 			    }
 			    else
                             {
-                                res.send(501, {success: false, message: 'Something went wrong'});
+                                res.send(501, {success: false, message: config.get('Msg10')});
                             }
 
 
@@ -285,7 +282,7 @@ exports.getVote = function(req,res){
                 }
                 else
                 {
-                    res.send(404, {success: false, message: 'Vote not found'});
+                    res.send(404, {success: false, message: config.get('Msg44')});
                 }
 
             })
@@ -295,7 +292,7 @@ exports.getVote = function(req,res){
     }
     else
     {
-        res.send(401,{ success : false, message : 'Authentication failed' });
+        res.send(401,{ success : false, message : config.get('Msg28') });
     }
 
 
@@ -329,13 +326,13 @@ exports.register = function(req,res){
                                                     if (!err) {
                                                         res.send(200, {
                                                             success: true,
-                                                            message: 'Registered for claim succesfully'
+                                                            message: config.get('Msg45')
                                                         });
                                                     }
                                                     else {
                                                         res.send(501, {
                                                             success: false,
-                                                            message: 'Something went wrong'
+                                                            message: config.get('Msg10')
                                                         });
                                                     }
 
@@ -345,7 +342,7 @@ exports.register = function(req,res){
                                             else {
                                                 res.send(501, {
                                                     success: false,
-                                                    message: 'Could not find the vote for this claim'
+                                                    message: config.get('Msg46')
                                                 });
                                             }
                                         })
@@ -353,24 +350,24 @@ exports.register = function(req,res){
                                 }
                                 else
                                 {
-                                    res.send(404, {success: false, message: 'Vote registration period has ended'});
+                                    res.send(404, {success: false, message: config.get('Msg47')});
                                 }
                             }
                             else {
-                                res.send(404, {success: false, message: 'Active Voting round not found'});
+                                res.send(404, {success: false, message: config.get('Msg48')});
                             }
                         })
                     })
                 }
                 else {
-                    res.send(404, {success: false, message: 'User not found'});
+                    res.send(404, {success: false, message: config.get('Msg41')});
                 }
             })
         })
     }
     else
     {
-        res.send(401,{ success : false, message : 'Authentication failed' });
+        res.send(401,{ success : false, message : config.get('Msg28') });
     }
 
 
@@ -407,13 +404,13 @@ exports.endorse = function(req,res){
                                                             if (!err) {
                                                                 res.send(200, {
                                                                     success: true,
-                                                                    message: 'Endorsed claim succesfully'
+                                                                    message: config.get('Msg49')
                                                                 });
                                                             }
                                                             else {
                                                                 res.send(501, {
                                                                     success: false,
-                                                                    message: 'Claim endorsed. Endorse count incremenet error'
+                                                                    message: config.get('Msg50')
                                                                 });
                                                             }
 
@@ -422,19 +419,19 @@ exports.endorse = function(req,res){
                                                     })
                                                 }
                                                 else {
-                                                    res.send(501, {success: false, message: 'Something went wrong'});
+                                                    res.send(501, {success: false, message: config.get('Msg28')});
                                                 }
                                             })
                                         }
                                         else
                                             {
-                                                res.send(501, {success: false, message: 'User has already voted for this claim'});
+                                                res.send(501, {success: false, message: config.get('Msg51')});
                                             }
                                         }
                                         else {
                                             res.send(501, {
                                                 success: false,
-                                                message: 'Could not find the vote for this claim'
+                                                message: config.get('Msg46')
                                             });
                                         }
                                     })
@@ -442,24 +439,24 @@ exports.endorse = function(req,res){
                             }
                             else
                                 {
-                                    res.send(404, {success: false, message: 'Vote period has ended'});
+                                    res.send(404, {success: false, message: config.get('Msg53')});
                                 }
                             }
                             else {
-                                res.send(404, {success: false, message: 'Active Voting round not found'});
+                                res.send(404, {success: false, message: config.get('Msg48')});
                             }
                         })
                     })
                 }
                 else {
-                    res.send(404, {success: false, message: 'User not found'});
+                    res.send(404, {success: false, message: config.get('Msg41')});
                 }
             })
         })
     }
     else
     {
-        res.send(401,{ success : false, message : 'Authentication failed' });
+        res.send(401,{ success : false, message : config.get('Msg28') });
     }
 }
 
@@ -492,13 +489,13 @@ exports.flag = function(req,res){
                                                                     if (!err) {
                                                                         res.send(200, {
                                                                             success: true,
-                                                                            message: 'Flagged claim succesfully'
+                                                                            message: config.get('Msg55')
                                                                         });
                                                                     }
                                                                     else {
                                                                         res.send(501, {
                                                                             success: false,
-                                                                            message: 'Claim flagged. Flag count incremenet error'
+                                                                            message: config.get('Msg56')
                                                                         });
                                                                     }
                                                                 })
@@ -507,20 +504,20 @@ exports.flag = function(req,res){
                                                         else {
                                                             res.send(501, {
                                                                 success: false,
-                                                                message: 'Something went wrong'
+                                                                message: config.get('Msg10')
                                                             });
                                                         }
                                                     })
                                                 }
                                                 else
                                                 {
-                                                    res.send(501, {success: false, message: 'User has already voted for this claim'});
+                                                    res.send(501, {success: false, message: config.get('Msg51')});
                                                 }
                                             }
                                             else {
                                                 res.send(501, {
                                                     success: false,
-                                                    message: 'Could not find the vote for this claim'
+                                                    message: config.get('Msg44')
                                                 });
                                             }
                                         })
@@ -528,23 +525,23 @@ exports.flag = function(req,res){
                                 }
                                 else
                                 {
-                                    res.send(404, {success: false, message: 'Vote period has ended'});
+                                    res.send(404, {success: false, message: config.get('Msg48')});
                                 }
                             }
                             else {
-                                res.send(404, {success: false, message: 'Active Voting round not found'});
+                                res.send(404, {success: false, message: config.get('Msg48')});
                             }
                         })
                     })
                 }
                 else {
-                    res.send(404, {success: false, message: 'User not found'});
+                    res.send(404, {success: false, message: config.get('Msg41')});
                 }
             })
         })
     }
     else
     {
-        res.send(401,{ success : false, message : 'Authentication failed' });
+        res.send(401,{ success : false, message : config.get('Msg28') });
     }
 }

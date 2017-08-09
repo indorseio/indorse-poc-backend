@@ -72,7 +72,7 @@ exports.signup = function(req,res){
 		        collection.findOne({'email': info['email']}, function(err, item) {
         		if(item)
         		{
-				res.send(404,{ success : false, message : 'User with email exists' });
+				res.send(404,{ success : false, message : config.get('Msg1') });
 			}
 			else
 			{
@@ -92,11 +92,11 @@ exports.signup = function(req,res){
                                         sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
                                         if(response.code != 'success')
                                         {
-                                                res.send(501,{ success : false, message : 'Error sending verification email' });
+                                                res.send(501,{ success : false, message : config.get('Msg2') });
                                         }
                                         else
                                         {
-                                                res.send({success : true,message : 'Verification email sent succesfully'})
+                                                res.send({success : true,message : config.get('Msg3')})
                                         }
                                         });
 	
@@ -109,7 +109,7 @@ exports.signup = function(req,res){
 	}
 	else
 	{
-		res.send(422,{ success : false, message : 'Email or password missing' });
+		res.send(422,{ success : false, message : config.get('Msg4') });
 	}
 }
 
@@ -128,7 +128,7 @@ exports.passwordForgot = function(req,res){
 				item['pass_verify_token'] = pass_verify_token;
 				collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
                                 if(err){
-                                                res.send(501,{success :  false,message : 'Forgot password action failed'});
+                                                res.send(501,{success :  false,message : config.get('Msg5')});
                                 }
                                 else
                                 {
@@ -142,11 +142,11 @@ exports.passwordForgot = function(req,res){
     					sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
 					if(response.code != 'success')
 					{
-						res.send(501,{ success : false, message : 'Error sending forgot password email' });
+						res.send(501,{ success : false, message : config.get('Msg6') });
 					}
 					else
 					{
-						res.send({success : true,message : 'Forgot password email sent succesfully'})
+						res.send({success : true,message : config.get('Msg7')})
 					}
     					});
 
@@ -156,14 +156,14 @@ exports.passwordForgot = function(req,res){
                         }
                         else
                         {
-				res.send(404,{ success : false, message : 'User with email does not exists' });
+				res.send(404,{ success : false, message : config.get('Msg8') });
                         }
                         })
                 })
         }
         else
         {
-                res.send(422,{ success : false, message : 'Email missing' });
+                res.send(422,{ success : false, message : config.get('Msg9') });
         }
 }
 
@@ -197,12 +197,12 @@ exports.passwordReset = function(req,res){
                         item['tokens'].push(token);
 				        collection.update({'email' : info['email']},item,{safe:true}, function(err,result){
                             if(err){
-                                res.send(501,{success :  false,message : 'Something went wrong'});
+                                res.send(501,{success :  false,message : config.get('Msg10')});
                             }
                             else
                             {
                                                 
-					            res.send({success : true,message : 'Password updated succesfully'})
+					            res.send({success : true,message : config.get('Msg11')})
                                 
                             }
                         })
@@ -210,7 +210,7 @@ exports.passwordReset = function(req,res){
                     }
                     else
                     {
-                        res.send(401,{ success : false, message : 'Token authorization failed for given user' });
+                        res.send(401,{ success : false, message : config.get('Msg12') });
                     }
                 })
             })
@@ -241,17 +241,17 @@ exports.passwordChange = function(req,res){
                                         item['pass'] = passwordData.passwordHash;
                                         collection.update({'email': email}, item, {safe: true}, function (err, result) {
                                             if (err) {
-                                                res.send(501, {success: false, message: 'Something went wrong'});
+                                                res.send(501, {success: false, message: config.get('Msg10')});
                                             }
                                             else {
-                                                res.send(200, {success: true, message: 'Password changed succesfully'});
+                                                res.send(200, {success: true, message: config.get('Msg13')});
                                             }
                                         })
                                     }
                                     else {
                                         res.send(401, {
                                             success: false,
-                                            message: 'Email does not match with current password'
+                                            message: config.get('Msg14')
                                         });
                                     }
 
@@ -265,7 +265,7 @@ exports.passwordChange = function(req,res){
         }
         else
         {
-                res.send(422,{ success : false, message : 'Email or token missing' });
+                res.send(422,{ success : false, message : config.get('Msg16') });
         }
 }
 
@@ -296,20 +296,20 @@ exports.verify = function(req,res){
                 //item['tokens'].push(token);
 				collection.update({'email' : info['email']},item,{safe:true}, function(err, result) {
 				if (err) {
-                                	    res.send(501,{ success : false, message : 'Error verifying the user' });
+                                	    res.send(501,{ success : false, message : config.get('Msg17') });
 				} else {
 
 
 
 
 
-					res.send(200,{ success : true, message : 'user verified succesfully'});	
+					res.send(200,{ success : true, message : config.get('Msg18')});	
                                    }
                                 });
 			}
 			else
 			{
-				res.send(401,{ success : false, message : 'Email and token dont match' });
+				res.send(401,{ success : false, message : config.get('Msg19') });
 			}
 		})
 	})
@@ -317,7 +317,7 @@ exports.verify = function(req,res){
 	}
 	else
 	{
-		res.send(422,{ success : false, message : 'Email or token missing' });
+		res.send(422,{ success : false, message : config.get('Msg20') });
 	}
 
 }
@@ -337,16 +337,16 @@ exports.logout = function(req,res){
 
                     collection.update({'email': email}, { "$pull": { "tokens": token } }, {safe: true}, function (err, result) {
                         if (err) {
-                            res.send(501, {success: false, message: 'Something went wrong'});
+                            res.send(501, {success: false, message: config.get('Msg10')});
                         }
                         else {
-                            res.send(200, {success: true, message: 'Logged out succesfully'});
+                            res.send(200, {success: true, message: config.get('Msg21')});
                         }
                     })
                 }
                 else
                 {
-                    res.send(501, {success: false, message: 'Something went wrong'});
+                    res.send(501, {success: false, message: config.get('Msg10')});
                 }
 		});
 			})
@@ -354,7 +354,7 @@ exports.logout = function(req,res){
 	}
 	else
 	{
-		res.send(401,{ success : false, message : 'Auth Failed' });
+		res.send(401,{ success : false, message : config.get('Msg22') });
 	}
 }
 
@@ -390,32 +390,32 @@ exports.login = function(req,res){
                 item['tokens'].push(token);
                 collection.update({'email' : email},item,{safe:true}, function(err, result) {
                     if (err) {
-                        res.send(501,{ success : false, message : 'Error logging in the user' });
+                        res.send(501,{ success : false, message : config.get('Msg22')});
                     } else {
-                        res.send(200,{ success : true, message : 'user logged in succesfully', token : token});
+                        res.send(200,{ success : true, message : config.get('Msg23'), token : token});
                     }
                 });
 			}
 			else
 			{
-				res.send(401,{ success : false, message : 'Email and password do not match' });
+				res.send(401,{ success : false, message : config.get('Msg24') });
 			}
         }
         else
         {
-            res.send(404,{ success : false, message : 'User is not yet approved' });
+            res.send(404,{ success : false, message : config.get('Msg25') });
         }
 		}
 		else
 		{
-			 res.send(404,{ success : false, message : 'User with email not found' });
+			 res.send(404,{ success : false, message : config.get('Msg26') });
 		}
 		})
 		})
 	}
 	else
 	{
-		res.send(422,{ success : false, message : 'Email or password missing' });
+		res.send(422,{ success : false, message : config.get('Msg27') });
 	}
 }
 
@@ -455,14 +455,14 @@ exports.profile = function(req,res){
                 }
                         else
                         {       
-                                res.send(401,{ success : false, message : 'Auhentication failed' });
+                                res.send(401,{ success : false, message : config.get('Msg28') });
                         }
                 })      
                 })
         }
         else
         {       
-                res.send(401,{ success : false, message : 'Auhentication failed' });
+                res.send(401,{ success : false, message : config.get('Msg28') });
         }
 }
 
@@ -496,14 +496,14 @@ exports.getUsers = function(req,res){
                 }
                 else
                 {
-                    res.send(403,{ success : false, message : 'Auhentication failed' });
+                    res.send(403,{ success : false, message : config.get('Msg28') });
                 }
                 })
                 })
         }
         else
         {
-                res.send(401,{ success : false, message : 'Auhentication failed' });
+                res.send(401,{ success : false, message : config.get('Msg28') });
         }
 }
 
@@ -526,36 +526,36 @@ exports.approve = function(req,res){
                                                 collection.update({'_id' : ObjectID(approve_user_id)},item,{safe:true}, function(err, result) {
                                                 if(err)
                                                 {
-                                                        res.send(501,{ success : false, message : 'Something went wrong'});
+                                                        res.send(501,{ success : false, message : config.get('Msg10')});
                                                 }
                                                 else
                                                 {
-                                                        res.send(200,{ success : true, message : 'User approved succesfully'});
+                                                        res.send(200,{ success : true, message : config.get('Msg29')});
                                                 }
                                                 })
                                     }
                                     else
                                     {
-                                        res.send(422,{ success : false, message : 'User has not verified their email address'});
+                                        res.send(422,{ success : false, message : config.get('Msg30')});
                                     }
                                 }
                                 else
                                 {
-                                    res.send(404,{ success : false, message : 'Unable to find user'});
+                                    res.send(404,{ success : false, message : config.get('Msg31')});
                                 }
                             })
 
                         }
                         else
                         {
-                                res.send(403,{ success : false, message : 'Auhentication failed' });
+                                res.send(403,{ success : false, message : config.get('Msg28') });
                         }
                 })
                 })
         }
         else
         {
-                res.send(401,{ success : false, message : 'Auhentication failed' });
+                res.send(401,{ success : false, message : config.get('Msg28') });
         }
 }
 
@@ -580,36 +580,36 @@ exports.disapprove = function(req,res){
                                                         collection.update({'_id' : ObjectID(approve_user_id)},item,{safe:true}, function(err, result) {
                                                         if(err)
                                                         {
-                                                                res.send(501,{ success : false, message : 'Something went wrong'});
+                                                                res.send(501,{ success : false, message : config.get('Msg10')});
                                                         }
                                                         else
                                                         {
-                                                                res.send(200,{ success : true, message : 'User disapproved succesfully'});
+                                                                res.send(200,{ success : true, message : config.get('Msg32')});
                                                         }
                                                         })
                                                         }
                                             else
                                             {
-                                                res.send(422,{ success : false, message : 'User has not verified their email address'});
+                                                res.send(422,{ success : false, message : config.get('Msg30')});
                                             }
                                          }
                                         else
                                         {
-                                                res.send(404,{ success : false, message : 'Unable to find user'});
+                                                res.send(404,{ success : false, message : config.get('Msg31')});
                                         }
                                 })
 
                         }
                         else
                         {
-                                res.send(403,{ success : false, message : 'Auhentication failed' });
+                                res.send(403,{ success : false, message : config.get('Msg28') });
                         }       
                 })      
                 })      
         }       
         else    
         {
-                res.send(401,{ success : false, message : 'Email or token missing' });
+                res.send(401,{ success : false, message : config.get('Msg33') });
         }
 
 }
