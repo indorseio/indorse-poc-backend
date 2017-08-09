@@ -22,7 +22,7 @@ var server = new Server(config.get('DBHost'),config.get('DBPort'), {auto_reconne
 const MongoClient = mongo.MongoClient
 var db;
 
-MongoClient.connect(process.env.poc_mongo, function(err, database) {
+MongoClient.connect(config.get('poc_mongo'), function(err, database) {
     if (err) return console.log(err);
     db = database;
 });
