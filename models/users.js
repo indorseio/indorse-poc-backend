@@ -72,6 +72,7 @@ exports.signup = function(req,res){
 		        collection.findOne({'email': info['email']}, function(err, item) {
         		if(item)
         		{
+
 				res.send(404,{ success : false, message : config.get('Msg1') });
 			}
 			else
@@ -111,6 +112,52 @@ exports.signup = function(req,res){
 	{
 		res.send(422,{ success : false, message : config.get('Msg4') });
 	}
+}
+
+exports.resendVerification = function(req,res){
+
+    var info = req.body;
+    if('email' in info && info['email'] != '')
+    {
+        var email = info['email'];
+                    db.collection('users',function(err,collection){
+                            info['timestamp'] = Math.floor(Date.now() / 1000);
+                            collection.findOne({'email': info['email']}, function(err, item) {
+                            if(item)
+                            {
+                                    if(!('verified' in item) || !item['verified'])
+                                    {
+                                        if(!('verify_token' in item))
+                                        {
+                                            //insert if not available. But logically verify token should be present since user is created but verification is not done
+                                        }
+                                        var msg_text = "Dear " + item['name'] + ", <br><br> Thank you for signing-up at Indorse.io.  Welcome to the Indorse community.  For the purposes of verification, we request you to click on the following link to verify your email address: <br><br> <a href='" + config.get('app_url')   + "verify-email?email=" + item['email'] + "&token=" + item['verify_token'] + "'>Verification link</a> <br><br> If you have not signed-up on Indorse.io, we request you to kindly ignore this email.  We apologise for the inconvenience this may have caused you. <br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
+                                        var sub_text = 'Your email verification link from Indorse';
+                                        var to_obj = {};
+                                        to_obj[item['email']] = item['name'];
+                                        sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
+                                        if(response.code != 'success')
+                                        {
+                                                res.send(501,{ success : false, message : config.get('Msg2') });
+                                        }
+                                        else
+                                        {
+                                                res.send({success : true,message : config.get('Msg3')})
+                                        }
+                                        });
+                                    }
+                                    else
+                                    {
+                                        res.send(501,{ success : false, message : config.get('Msg58') });
+                                    }
+                            }
+                            else
+                            {
+                                res.send(501,{ success : false, message : config.get('Msg26') });
+                            }
+                        })
+                    })
+    }
 }
 
 exports.passwordForgot = function(req,res){
