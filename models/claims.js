@@ -123,12 +123,12 @@ exports.claim = function(req, res) {
                                             res.send(200, {
                                                 success: true,
                                                 claim: result['ops'],
-                                                message: 'Claim has been created'
+                                                message: config.get('Msg34')
                                             });
                                         } else {
                                             res.send(501, {
                                                 success: false,
-                                                message: 'Something went wrong'
+                                                message: config.get('Msg10')
                                             });
                                         }
 
@@ -144,7 +144,7 @@ exports.claim = function(req, res) {
                     } else {
                         res.send(404, {
                             success: false,
-                            message: 'User not found'
+                            message: config.get('Msg35')
                         });
                     }
 
@@ -155,13 +155,13 @@ exports.claim = function(req, res) {
         } else {
             res.send(422, {
                 success: false,
-                message: 'Mandatory fields info missing'
+                message: config.get('Msg36')
             });
         }
     } else {
         res.send(401, {
             success: false,
-            message: 'Authentication failed'
+            message: config.get('Msg28')
         });
     }
 }
@@ -207,12 +207,12 @@ exports.updateClaims = function(req, res) {
                                             if (err) {
                                                 res.send(501, {
                                                     success: false,
-                                                    message: 'Update claim failed'
+                                                    message: config.get('Msg37')
                                                 });
                                             } else {
                                                 res.send(200, {
                                                     success: true,
-                                                    message: 'Claim has been updated'
+                                                    message: config.get('Msg38')
                                                 });
                                             }
 
@@ -220,7 +220,7 @@ exports.updateClaims = function(req, res) {
                                     } else {
                                         res.send(404, {
                                             success: false,
-                                            message: 'Claim not found'
+                                            message: config.get('Msg39')
                                         });
                                     }
                                 })
@@ -229,7 +229,7 @@ exports.updateClaims = function(req, res) {
                         } else {
                             res.send(422, {
                                 success: false,
-                                message: 'Claim id is not found'
+                                message: config.get('Msg40')
                             });
                         }
 
@@ -238,7 +238,7 @@ exports.updateClaims = function(req, res) {
                     } else {
                         res.send(404, {
                             success: false,
-                            message: 'User not found'
+                            message: config.get('Msg41')
                         });
                     }
 
@@ -249,13 +249,13 @@ exports.updateClaims = function(req, res) {
         } else {
             res.send(422, {
                 success: false,
-                message: 'Claim info is missing'
+                message: config.get('Msg42')
             });
         }
     } else {
         res.send(401, {
             success: false,
-            message: 'Authentication failed'
+            message: config.get('Msg28')
         });
     }
 }
@@ -273,7 +273,7 @@ exports.getclaims = function(req, res) {
                             if (err) {
                                 res.send(501, {
                                     success: false,
-                                    message: 'Something went wrong'
+                                    message: config.get('Msg10')
                                 });
                             } else {
                                 collection1.find({
@@ -345,7 +345,7 @@ exports.getclaims = function(req, res) {
                     } else {
                         res.send(404, {
                             success: false,
-                            message: 'User not found'
+                            message: config.get('Msg41')
                         });
                     }
                 })
@@ -411,7 +411,7 @@ exports.getclaims = function(req, res) {
                                     } else {
                                         res.send(501, {
                                             success: false,
-                                            message: 'Something went wrong'
+                                            message: config.get('Msg10')
                                         });
                                     }
                                 })
@@ -419,7 +419,7 @@ exports.getclaims = function(req, res) {
                         } else {
                             res.send(404, {
                                 success: false,
-                                'message': 'Claim not found'
+                                'message': config.get('Msg39')
                             });
                         }
                     })
@@ -428,13 +428,13 @@ exports.getclaims = function(req, res) {
         } else {
             res.send(422, {
                 success: false,
-                message: 'User id or claim id is missing'
+                message: config.get('Msg43')
             });
         }
     } else {
         res.send(401, {
             success: false,
-            message: 'Authentication failed'
+            message: config.get('Msg28')
         });
     }
 }
