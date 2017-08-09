@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
 });
 
 app.post('/signup',user.signup)
-app.get('/resendverification',user.resendVerification)
+app.post('/resendverification',user.resendVerification)
 app.post('/verify-email',user.verify)
 app.post('/login',user.login)
 app.post('/logout',user.logout)

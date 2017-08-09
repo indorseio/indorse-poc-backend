@@ -158,6 +158,10 @@ exports.resendVerification = function(req,res){
                         })
                     })
     }
+    else
+    {
+        res.send(501,{ success : false, message : config.get('Msg9) });
+    }
 }
 
 exports.passwordForgot = function(req,res){
