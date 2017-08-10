@@ -362,7 +362,7 @@ exports.verify = function(req,res){
 				var user_item = Object.assign({},item);
 				delete user_item['pass'];
 				delete user_item['salt'];
-				delete user_item['tokens'];
+				delete  ['tokens'];
 				//var token = jwt.sign(user_item,config.get('jwtsecret'), {
                 //                       expiresIn : 60*60*24*31 // expires in 31 days
                 //                });
@@ -378,9 +378,25 @@ exports.verify = function(req,res){
 
 
 
-
+                        name = item['name']
+                    email = item['email']
+                    //var msg_text = "Hello here is the forgot passsword link https://indorse-staging.herokuapp.com/password/reset?email=" + email + "&pass_token=" + pass_verify_token;
+                    var msg_text = "Dear " + name + ", <br><br> Thank you for confirming your email address. As next steps, our team will quickly verify your registration request and will attempt to approve your login details at the earliest.  We will send you an email as soon as your login details are approved: <br><br> We look forward to your participation onto our platform.<br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
+                    var sub_text = 'Your email verified';
+                    var to_obj = {};
+                    to_obj[email] = name;
+                    var data = {
+                            from: 'Indorse <info@app.indorse.io>',
+                            to: item['email'],
+                            subject: sub_text,
+                            html: msg_text
+                    };
+                    mailgun.messages().send(data, function (error, response) {
 
 					res.send(200,{ success : true, message : config.get('Msg18')});	
+                                   
+                    });
+
                                    }
                                 });
 			}
@@ -607,7 +623,22 @@ exports.approve = function(req,res){
                                                 }
                                                 else
                                                 {
+                                                        name = item['name']
+                                                        email = item['email']
+                                                        //var msg_text = "Hello here is the forgot passsword link https://indorse-staging.herokuapp.com/password/reset?email=" + email + "&pass_token=" + pass_verify_token;
+                                                        var msg_text = "Dear " + name + ", <br><br> Our team has reviewed and approved your login details. <br><br>You may now visit our website: Indorse.io and login with your email address and password that you set, while creating your account at Indose.io: <br><br> The Indorse Community looks forward to your positive participation.<br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
+                                                        var sub_text = 'Your account has been approved';
+                                                        var to_obj = {};
+                                                        to_obj[email] = name;
+                                                        var data = {
+                                                                from: 'Indorse <info@app.indorse.io>',
+                                                                to: item['email'],
+                                                                subject: sub_text,
+                                                                html: msg_text
+                                                        };
+                                                        mailgun.messages().send(data, function (error, response) {
                                                         res.send(200,{ success : true, message : config.get('Msg29')});
+                                                    });
                                                 }
                                                 })
                                     }
