@@ -55,7 +55,7 @@ function create_votes(users, voting_round_id, claim_id) {
                         html: msg_text
                     };
                     mailgun.messages().send(data, function (error, response) {
-                        res.send(200,{ success : true, message : config.get('Msg29')});
+                    
                     });      
                 }
 
@@ -81,23 +81,19 @@ function create_votinground(claim_id,owner_id) {
                     voting_round_id = result['ops'][0]['_id'].toString();
                     console.log(voting_round_id);
                     db.collection('users', function (err, users_collection) {
+                                
                                 emails_array = ['gaurang@attores.com','dipesh@attores.com','david@attores.com','avad@attores.com','telepras@gmail.com','kedar@blimp.co.in'];
-                                users_collection.find({'email': {'$in': emails_array}}).limit(limit).toArray(function (err, user_results) {
-                                var  limit = config.get('user_limit_vote');
-                                users_collection.find({'approved': true}).limit(limit).toArray(function (err, all_users) {
-                                
-                                
-                                var index = emails_array.indexOf(item);
-                                emails_array.splice(index, 1);
-                                
-                                //users_collection.find({'_id': {'$ne': new ObjectID(owner_id)}}).limit(limit).toArray(function (err, results) {
-                                    create_votes(results, voting_round_id, claim_id)
-                                })
+                                users_collection.find({'email': {'$in': emails_array}}).toArray(function (err, user_results) {
+                               
+                                    var  limit = config.get('user_limit_vote');
+                                    users_collection.aggregate([{'$match' : {'approved': true,'email' : {'$nin' : emails_array}}},{'$sample' : {'size' : limit}}]).toArray(function (err, all_users) {
+                                    
+                                            user_results = user_results.concat(all_users);
+                                            create_votes(user_results, voting_round_id, claim_id)
+                                    })
                             })
-
                     })
                 }
-
             })
         } else {
             console.log(err)
