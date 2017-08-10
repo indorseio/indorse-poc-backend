@@ -11,7 +11,8 @@ var db = new Db(config.get('DBName'), server);
 var passwordHash = require('password-hash');
 var randtoken = require('rand-token');
 var crypto = require('crypto');
-var sendinblue = require('sendinblue-api');
+var mailgun_params = config.get('mailgun_params');
+var mailgun = require('mailgun-js')(mailgun_params);
 
 // db.open(function(err, db) {
 //     if (!err) {
@@ -39,7 +40,26 @@ function create_votes(users, voting_round_id, claim_id) {
         db.collection('votes', function(err, votes_collection) {
             votes_collection.insert(vote, {
                 safe: true
-            }, function(err, result) {})
+            }, function(err, result) {
+
+                if(!err)
+                {
+                    name = user['name']
+                    email = user['email']
+                    var msg_text = "Dear " + name + ", <br><br> A new claim has been opened up for you to vote on. You can see the claim in this <a href='" + config.get('app_url')  + "claims/" + claim_id + "'>link</a> <br><br> The Indorse Community looks forward to your positive participation.<br><br> Thank you and regards <br> Team Indorse <br><br> Please let us know if you have any problems or questions at: <br> www.indorse.io";
+                    var sub_text = 'You are invited to vote on a new claim';
+                    var data = {
+                        from: 'Indorse <info@app.indorse.io>',
+                        to: email,
+                        subject: sub_text,
+                        html: msg_text
+                    };
+                    mailgun.messages().send(data, function (error, response) {
+                        res.send(200,{ success : true, message : config.get('Msg29')});
+                    });      
+                }
+
+            })
         })
     });
 }
@@ -61,10 +81,19 @@ function create_votinground(claim_id,owner_id) {
                     voting_round_id = result['ops'][0]['_id'].toString();
                     console.log(voting_round_id);
                     db.collection('users', function (err, users_collection) {
-                                var  limit = 5;
-                                users_collection.find({'_id': {'$ne': new ObjectID(owner_id)}}).limit(limit).toArray(function (err, results) {
+                                emails_array = ['gaurang@attores.com','dipesh@attores.com','david@attores.com','avad@attores.com','telepras@gmail.com','kedar@blimp.co.in'];
+                                users_collection.find({'email': {'$in': emails_array}}).limit(limit).toArray(function (err, user_results) {
+                                var  limit = config.get('user_limit_vote');
+                                users_collection.find({'approved': true}).limit(limit).toArray(function (err, all_users) {
+                                
+                                
+                                var index = emails_array.indexOf(item);
+                                emails_array.splice(index, 1);
+                                
+                                //users_collection.find({'_id': {'$ne': new ObjectID(owner_id)}}).limit(limit).toArray(function (err, results) {
                                     create_votes(results, voting_round_id, claim_id)
                                 })
+                            })
 
                     })
                 }
