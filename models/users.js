@@ -12,6 +12,8 @@ var crypto = require('crypto');
 var sendinblue = require('sendinblue-api'); 
 var parameters = config.get('sendinblue_params')//Optional parameter: Timeout in MS 
 var sendinObj = new sendinblue(parameters);
+var mailgun_params = config.get('mailgun_params');
+var mailgun = require('mailgun-js')(mailgun_params);
 // var db = new Db(config.get('DBName'), server);
 
 // db.open(function(err, db) {
@@ -90,15 +92,23 @@ exports.signup = function(req,res){
                                         var sub_text = 'Your email verification link from Indorse';
                                         var to_obj = {};
                                         to_obj[email] = name;
-                                        sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
-                                        if(response.code != 'success')
+                                        var data = {
+                                          from: 'Indorse <info@indorse.io>',
+                                          to: email,
+                                          subject: sub_text,
+                                          html: msg_text
+                                        };
+                                        mailgun.messages().send(data, function (error, response) {
+                                        //sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
+                                        res.send({success : true,message : config.get('Msg3')})
+                                        /*if(response.code != 'success')
                                         {
                                                 res.send(501,{ success : false, message : config.get('Msg2') });
                                         }
                                         else
                                         {
                                                 res.send({success : true,message : config.get('Msg3')})
-                                        }
+                                        }*/
                                         });
 	
 						
@@ -135,15 +145,23 @@ exports.resendVerification = function(req,res){
                                         var sub_text = 'Your email verification link from Indorse';
                                         var to_obj = {};
                                         to_obj[item['email']] = item['name'];
-                                        sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
-                                        if(response.code != 'success')
+                                        //sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
+                                        var data = {
+                                          from: 'Indorse <info@app.indorse.io>',
+                                          to: item['email'],
+                                          subject: sub_text,
+                                          html: msg_text
+                                        };
+                                        mailgun.messages().send(data, function (error, response) {
+                                        res.send({success : true,message : config.get('Msg3')})
+                                        /*if(response.code != 'success')
                                         {
                                                 res.send(501,{ success : false, message : config.get('Msg2') });
                                         }
                                         else
                                         {
                                                 res.send({success : true,message : config.get('Msg3')})
-                                        }
+                                        }*/
                                         });
                                     }
                                     else
@@ -190,15 +208,23 @@ exports.passwordForgot = function(req,res){
                     var sub_text = 'Your forgot password link from Indorse';
 					var to_obj = {};
 					to_obj[email] = name;
-    					sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
-					if(response.code != 'success')
+                    var data = {
+                            from: 'Indorse <info@app.indorse.io>',
+                            to: item['email'],
+                            subject: sub_text,
+                            html: msg_text
+                    };
+                    mailgun.messages().send(data, function (error, response) {
+    				//sendinObj.send_email({"to" : to_obj,"from" : ["info@indorse.io","Indorse"],"text" : msg_text,"subject" : sub_text}, function(err, response){
+					res.send({success : true,message : config.get('Msg7')})
+                    /*if(response.code != 'success')
 					{
 						res.send(501,{ success : false, message : config.get('Msg6') });
 					}
 					else
 					{
 						res.send({success : true,message : config.get('Msg7')})
-					}
+					}*/
     					});
 
                                 }
