@@ -12,11 +12,6 @@ var passwordHash = require('password-hash');
 var randtoken = require('rand-token');
 var crypto = require('crypto');
 var sendinblue = require('sendinblue-api');
-var parameters = {
-    "apiKey": "zBNScm5pPbYZaVUL",
-    "timeout": 5000
-}; //Optional parameter: Timeout in MS 
-var sendinObj = new sendinblue(parameters);
 
 // db.open(function(err, db) {
 //     if (!err) {
