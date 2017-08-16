@@ -1,49 +1,31 @@
 process.env.NODE_ENV = 'test'
 
-let mongo = require('mongodb');
+let mongo = require('mongodb')
 let chai = require('chai')
 let chaiHttp = require('chai-http')
 let server = require('../server')
 let should = chai.should()
-var config = require('config');
+let DB = require('./db')
 chai.use(chaiHttp)
 
 describe('Users', () => {
 
-  describe('/GET unknown', () => {
-
-    it('should return 404', (done) => {
-      chai.request(server)
-        .get('/unknown')
-        .end((err, res) => {
-          res.should.have.status(404)
-          done()
-        })
+  describe('/POST signup', () => {
+    before((done) => {
+      DB.connect(done)
     })
 
-  })
-
-  describe('/POST signup', () => {
     before((done) => {
       let user = {
         email: "p@example.com"
       }
-      const MongoClient = mongo.MongoClient
-      MongoClient.connect(config.get('poc_mongo'), (err, db) => {
-        if (err) return console.log(err)
-        users = db.collection('users')
-        users.insertOne(user)
-          .then(() => done())
-      })
+      users = DB.getDB().collection('users')
+      users.insertOne(user)
+        .then(() => done())
     })
 
     afterEach((done) => {
-      const MongoClient = mongo.MongoClient
-      MongoClient.connect(config.get('poc_mongo'), (err, db) => {
-        if (err) return console.log(err)
-        users = db.collection('users')
-        users.removeMany().then(() => done())
-      })
+      DB.drop(done)
     })
 
     it('should return 404 if user exists', (done) => {
@@ -94,24 +76,19 @@ describe('Users', () => {
           res.should.have.status(200)
           res.body.should.be.a('object')
           res.body.message.should.equal('Verification email sent successfully')
-          const MongoClient = mongo.MongoClient
-          MongoClient.connect(config.get('poc_mongo'), (err, db) => {
-            if (err) return console.log(err)
-            users = db.collection('users')
-            users.findOne({email: user.email})
-              .then((item) => {
-                item.name.should.equal(user.name)
-                item.email.should.equal(user.email)
-              })
-              .then(() => {
-                done()
-              })
-          })
+          users = DB.getDB().collection('users')
+          users.findOne({email: user.email})
+            .then((item) => {
+              item.name.should.equal(user.name)
+              item.email.should.equal(user.email)
+            })
+            .then(() => {
+              done()
+            })
         })
     })
 
   })
-
 })
 
 // app.post('/signup',user.signup)
