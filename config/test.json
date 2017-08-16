@@ -13,7 +13,7 @@
 	"voteperiod" : 240,  //Relative to the time when claim has been created. In this case voting ends 30 mins after claim is created
 	"registerperiod" : 120, // Relative to the time when claim has been created. In this case voting ends 15 mins after claim is created
 	"app_url" : "https://app.indorse.io/",
-	"poc_mongo" : "mongodb://prasanna:eq1Qv!6NMcaG@ds123193.mlab.com:23193/test2",
+	"poc_mongo" : "mongodb://prasanna:eq1Qv!6NMcaG@ds029328.mlab.com:29328/indores_dev",
 	"user_limit_vote"  : 2,
 	"Msg1" : "User with this email exists",
 	"Msg2" : "Sorry. there was an error sending the verification email, please try again",
