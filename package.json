@@ -33,6 +33,6 @@
   "scripts": {
     "start": "export NODE_ENV=dev && forever start -l forever.log -o out.log -e err.log -a server.js",
     "stop": "forever stop server.js",
-    "test": "mocha --timeout 100000 --recursive test/**/*.spec.js"
+    "test": "export NODE_ENV=test && mocha --timeout 100000 --recursive test/**/*.spec.js"
   }
 }
