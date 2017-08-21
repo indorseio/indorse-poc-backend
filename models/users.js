@@ -326,7 +326,7 @@ exports.passwordChange = function(req,res){
                                         })
                                     }
                                     else {
-                                        res.send(401, {
+                                        res.send(422, {
                                             success: false,
                                             message: config.get('Msg14')
                                         });
