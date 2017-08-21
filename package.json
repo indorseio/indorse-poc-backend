@@ -23,14 +23,17 @@
     "web3": "^0.19.0"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "mocha": "^2.4.5",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "sinon": "^3.2.0",
+    "sleep": "^5.1.1"
   },
   "scripts": {
     "start": "export NODE_ENV=dev && forever start -l forever.log -o out.log -e err.log -a server.js",
     "stop": "forever stop server.js",
-    "test": "mocha --timeout 100000"
+    "test": "export NODE_ENV=test && mocha --timeout 100000 --recursive test/**/*.spec.js"
   }
 }

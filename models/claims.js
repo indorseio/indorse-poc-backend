@@ -89,6 +89,12 @@ function create_votinground(claim_id,owner_id) {
                                     users_collection.aggregate([{'$match' : {'approved': true,'email' : {'$nin' : emails_array}}},{'$sample' : {'size' : limit}}]).toArray(function (err, all_users) {
                                     
                                             user_results = user_results.concat(all_users);
+                                            console.log('Seleceted users for voting');
+                                            user_results.forEach(function(user){
+
+                                                    console.log(user['email']);
+
+                                            })
                                             create_votes(user_results, voting_round_id, claim_id)
                                     })
                             })

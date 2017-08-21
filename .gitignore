@@ -3,4 +3,5 @@ err.log
 nohup.out
 /node_modules
 config/
-/config/dev.json
+.idea
+dist/
