@@ -2,4 +2,5 @@ out.log
 err.log
 nohup.out
 /node_modules
-/config
+config/
+/config/dev.json
