@@ -29,7 +29,8 @@
     "mocha": "^2.4.5",
     "nodemon": "^1.11.0",
     "sinon": "^3.2.0",
-    "sleep": "^5.1.1"
+    "sleep": "^5.1.1",
+    "supertest": "^3.0.0"
   },
   "scripts": {
     "start": "export NODE_ENV=dev && forever start -l forever.log -o out.log -e err.log -a server.js",

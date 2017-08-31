@@ -27,6 +27,23 @@ MongoClient.connect(config.get('poc_mongo'), function(err, database) {
     db = database;
 });
 
+function increase_user_score(userids)
+{
+
+    db.collection('users', function (err, collection) {
+
+        userids.forEach(function(user_id){
+
+                collection.update({'_id': new ObjectID(user_id)},{$inc: {'score_count': 1}}, {safe: true}, function (err, result) {
+
+            });
+
+        });
+
+    });
+
+}
+
 exports.closeVotes = function(req,res){
 
     db.collection('votingrounds', function (err, votinground_collection) {
@@ -97,11 +114,14 @@ exports.closeVotes = function(req,res){
                                                 if (!(vote['claim_id'] in claims_final)) {
                                                     claims_final[vote['claim_id']] = {};
                                                     claims_final[vote['claim_id']].eths = [];
+                                                    claims_final[vote['claim_id']].userids = [];
                                                     if(endorse_count >= flag_count)
                                                     {
+                                                        claims_final[vote['claim_id']].userids.push(vote_claim.ownerid);
                                                         claims_final[vote['claim_id']].eths.push(user_ethers[vote_claim.ownerid]);
                                                     }
                                                 }
+                                                claims_final[vote['claim_id']].userids.push(vote['voter_id']);
                                                 claims_final[vote['claim_id']].eths.push(user_ethers[vote['voter_id']]);
                                             }
                                         }
@@ -112,12 +132,12 @@ exports.closeVotes = function(req,res){
                                     {
                                         claim = claims_final[claim_id];
                                         var arr = claim.eths;
-                                        console.log(arr);
                                         score_token.data.increase_score(arr, function(err, result){
                                                 console.log(result);
                                         });
-                                        //CALL BLOCKCHAIN FUNCTION HERE with arr
-
+                                        var users = claim.userids;
+                                        console.log(claim.userids);
+                                        increase_user_score(claim.userids);
                                     }
 
                                     
@@ -130,8 +150,6 @@ exports.closeVotes = function(req,res){
                                         }
 
                                     })
-
-                                    //res.send(200,{success: true});
 
 
                                 })

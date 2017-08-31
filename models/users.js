@@ -56,7 +56,6 @@ function saltHashPassword(userpassword) {
     return passwordData;
 }
 
-
 exports.signup = function(req,res){
 
 	var info = req.body;
@@ -82,6 +81,7 @@ exports.signup = function(req,res){
 				info['pass'] =  hashedPassword;
 				info['salt'] = salt;
 				info['verify_token'] = randtoken.generate(16);
+                info['ga_id'] = randtoken.generate(16);
 				delete info['password'];
 				collection.insert(info, {safe:true}, function(err,result){
                 		if(err){
