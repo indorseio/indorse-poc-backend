@@ -75,6 +75,7 @@ describe('Claims', () => {
           res.body.should.be.a('object')
           res.should.have.status(200)
           claim_id = res.body.claim[0]._id
+          done()
         })
     })
 
